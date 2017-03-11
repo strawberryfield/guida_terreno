@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Guida alla creazione del terreno per MSTS e OR &mdash; MSTS/OR Terrain Guide  documentation</title>
+  <title>Guida alla creazione del terreno per MSTS e OR &mdash; &lt;project&gt; release &lt;release&gt;</title>
   
 
   
@@ -33,8 +33,8 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="MSTS/OR Terrain Guide  documentation" href="#"/>
-        <link rel="next" title="1. Creare la route" href="main.html"/> 
+    <link rel="top" title="&lt;project&gt; release &lt;release&gt;" href="#"/>
+        <link rel="next" title="1. Software necessario" href="software.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -65,7 +65,7 @@
             
             
               <div class="version">
-                1.0
+                0.9
               </div>
             
           
@@ -87,12 +87,15 @@
             
             
                 <ul>
-<li class="toctree-l1"><a class="reference internal" href="main.html">1. Creare la route</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dem.html">2. Modellare il terreno</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dm.html">3. Modellare le montagne distanti</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dm2.html">4. Completare le montagne distanti</a></li>
-<li class="toctree-l1"><a class="reference internal" href="acknowledgements.html">5. Ringraziamenti</a></li>
-<li class="toctree-l1"><a class="reference internal" href="legal.html">6. Note legali</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software.html">1. Software necessario</a></li>
+<li class="toctree-l1"><a class="reference internal" href="main.html">2. Creare la route</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dem.html">3. Modellare il terreno</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dm.html">4. Modellare le montagne distanti</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dm2.html">5. Completare le montagne distanti</a></li>
+<li class="toctree-l1"><a class="reference internal" href="biblio.html">6. Bibliografia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledgements.html">7. Ringraziamenti</a></li>
+<li class="toctree-l1"><a class="reference internal" href="download.html">8. Download sorgenti e binari</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legal.html">9. Note legali</a></li>
 </ul>
 
             
@@ -141,28 +144,39 @@
 <h1>Guida alla creazione del terreno per MSTS e OR<a class="headerlink" href="#guida-alla-creazione-del-terreno-per-msts-e-or" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="main.html">1. Creare la route</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="main.html#parametri-generali">1.1. Parametri generali</a></li>
-<li class="toctree-l2"><a class="reference internal" href="main.html#definire-l-area">1.2. Definire l&#8217;area</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software.html">1. Software necessario</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="software.html#microsoft-train-simulator">1.1. Microsoft Train Simulator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="software.html#demex">1.2. Demex</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="dem.html">2. Modellare il terreno</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="dem.html#caricare-le-dem">2.1. Caricare le DEM</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dem.html#generare-le-montagne">2.2. Generare le montagne</a></li>
+<li class="toctree-l1"><a class="reference internal" href="main.html">2. Creare la route</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="main.html#parametri-generali">2.1. Parametri generali</a></li>
+<li class="toctree-l2"><a class="reference internal" href="main.html#definire-l-area">2.2. Definire l&#8217;area</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="dm.html">3. Modellare le montagne distanti</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dm2.html">4. Completare le montagne distanti</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="dm2.html#generare-il-quad-tree-nella-route-temporanea">4.1. Generare il quad-tree nella route temporanea</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dm2.html#modellare-il-terreno-con-demex">4.2. Modellare il terreno con Demex</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dm2.html#trasferire-i-tiles">4.3. Trasferire i tiles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dem.html">3. Modellare il terreno</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="dem.html#caricare-le-dem">3.1. Caricare le DEM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dem.html#generare-le-montagne">3.2. Generare le montagne</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="acknowledgements.html">5. Ringraziamenti</a></li>
-<li class="toctree-l1"><a class="reference internal" href="legal.html">6. Note legali</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="legal.html#garanzia">6.1. Garanzia</a></li>
-<li class="toctree-l2"><a class="reference internal" href="legal.html#riconoscimenti-della-proprieta">6.2. Riconoscimenti della proprietà</a></li>
-<li class="toctree-l2"><a class="reference internal" href="legal.html#accordi-di-copyright-e-licenza">6.3. Accordi di Copyright e Licenza</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dm.html">4. Modellare le montagne distanti</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dm2.html">5. Completare le montagne distanti</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="dm2.html#generare-il-quad-tree-nella-route-temporanea">5.1. Generare il quad-tree nella route temporanea</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dm2.html#modellare-il-terreno-con-demex">5.2. Modellare il terreno con Demex</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dm2.html#trasferire-i-tiles">5.3. Trasferire i tiles</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="biblio.html">6. Bibliografia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledgements.html">7. Ringraziamenti</a></li>
+<li class="toctree-l1"><a class="reference internal" href="download.html">8. Download sorgenti e binari</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="download.html#versioni-compilate">8.1. Versioni compilate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="download.html#sorgenti">8.2. Sorgenti</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="legal.html">9. Note legali</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="legal.html#garanzia">9.1. Garanzia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="legal.html#riconoscimenti-della-proprieta">9.2. Riconoscimenti della proprietà</a></li>
+<li class="toctree-l2"><a class="reference internal" href="legal.html#accordi-di-copyright-e-licenza">9.3. Accordi di Copyright e Licenza</a></li>
 </ul>
 </li>
 </ul>
@@ -176,7 +190,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="main.html" class="btn btn-neutral float-right" title="1. Creare la route" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="software.html" class="btn btn-neutral float-right" title="1. Software necessario" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
     </div>
@@ -186,7 +200,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017, Roberto Ceccarelli - The Strawberry Field.
+        &copy; Copyright 2017 Roberto Ceccarelli - The Strawberry Field.
 
     </p>
   </div>
@@ -208,7 +222,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'',
+            VERSION:'0.9 draft',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

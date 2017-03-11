@@ -10,9 +10,12 @@ Guida alla creazione del terreno per MSTS e OR
     :maxdepth: 3
     :numbered:
 
+    software
     main
     dem
     dm
     dm2
+    biblio
     acknowledgements
+    download
     legal

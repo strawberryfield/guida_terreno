@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>3. Modellare il terreno &mdash; &lt;project&gt; release &lt;release&gt;</title>
+  <title>1. Software necessario &mdash; &lt;project&gt; release &lt;release&gt;</title>
   
 
   
@@ -34,8 +34,8 @@
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="&lt;project&gt; release &lt;release&gt;" href="index.html"/>
-        <link rel="next" title="4. Modellare le montagne distanti" href="dm.html"/>
-        <link rel="prev" title="2. Creare la route" href="main.html"/> 
+        <link rel="next" title="2. Creare la route" href="main.html"/>
+        <link rel="prev" title="Guida alla creazione del terreno per MSTS e OR" href="index.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -88,13 +88,13 @@
             
             
                 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="software.html">1. Software necessario</a></li>
-<li class="toctree-l1"><a class="reference internal" href="main.html">2. Creare la route</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">3. Modellare il terreno</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#caricare-le-dem">3.1. Caricare le DEM</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#generare-le-montagne">3.2. Generare le montagne</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. Software necessario</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#microsoft-train-simulator">1.1. Microsoft Train Simulator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#demex">1.2. Demex</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="main.html">2. Creare la route</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dem.html">3. Modellare il terreno</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dm.html">4. Modellare le montagne distanti</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dm2.html">5. Completare le montagne distanti</a></li>
 <li class="toctree-l1"><a class="reference internal" href="biblio.html">6. Bibliografia</a></li>
@@ -131,11 +131,11 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li>3. Modellare il terreno</li>
+    <li>1. Software necessario</li>
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/dem.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/software.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -145,15 +145,27 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="modellare-il-terreno">
-<span id="standard-terrain"></span><h1>3. Modellare il terreno<a class="headerlink" href="#modellare-il-terreno" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="caricare-le-dem">
-<span id="dem-import"></span><h2>3.1. Caricare le DEM<a class="headerlink" href="#caricare-le-dem" title="Permalink to this headline">¶</a></h2>
-<p>Apriamo Demex, se non abbiamo la versione registrata utilizziamolo in modalità <code class="docutils literal"><span class="pre">Unregistered</span></code></p>
+  <div class="section" id="software-necessario">
+<span id="software"></span><h1>1. Software necessario<a class="headerlink" href="#software-necessario" title="Permalink to this headline">¶</a></h1>
+<p>Per creare le route ed il terreno con le modalità descritte in questa guida è necessario
+dotarsi di due programmi:</p>
+<div class="section" id="microsoft-train-simulator">
+<h2>1.1. Microsoft Train Simulator<a class="headerlink" href="#microsoft-train-simulator" title="Permalink to this headline">¶</a></h2>
+<p>Questo programma è molto vecchio, risale al 2001, e con un po&#8217; di fortuna si può ancora trovare in qualche negozio:
+qualche anno fa ne ho acquistato una copia al Game Stop al prezzo (praticamente simbolico) di 98 centesimi.
+Mi dicono sia trovabile più facilmente su eBay.</p>
+<p>Dopo l&#8217;installazione è necessario applicare una patch fornita dalla stessa Microsoft e
+<a class="reference external" href="http://msts.steam4me.net/MSTS_Updates/files/Train_Update1.exe">scaricabile da questo link</a>.</p>
+<p>Leggendo varie guide in rete viene elencata una lunga serie di altre patch necessarie per utilizzare gli add-on
+più recenti, ma al nostro scopo basta quella patch.</p>
 </div>
-<div class="section" id="generare-le-montagne">
-<span id="quad-tree"></span><h2>3.2. Generare le montagne<a class="headerlink" href="#generare-le-montagne" title="Permalink to this headline">¶</a></h2>
-<p>Selezioniamo la route da modellare</p>
+<div class="section" id="demex">
+<h2>1.2. Demex<a class="headerlink" href="#demex" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="http://www.digital-rails.com/files/demex_setup151.exe">Il programma può essere scaricato da questo link</a>
+in versione dimostrativa e può essere registrato sul sito di <a class="reference external" href="https://digital-rails.com/dr_tools.html">Digital Rails</a></p>
+<p>La versione registrata può realizzare le montagne distanti in maniera semplificata; se non si ha intenzione di utilizzare
+la funzione delle montagne distanti o si accetta la complicazione spiegata più avanti si può
+procedere anche con la versione non registrata.</p>
 </div>
 </div>
 
@@ -164,10 +176,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="dm.html" class="btn btn-neutral float-right" title="4. Modellare le montagne distanti" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="main.html" class="btn btn-neutral float-right" title="2. Creare la route" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="main.html" class="btn btn-neutral" title="2. Creare la route" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral" title="Guida alla creazione del terreno per MSTS e OR" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
