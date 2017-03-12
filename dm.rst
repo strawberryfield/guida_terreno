@@ -7,6 +7,8 @@ Modellare le montagne distanti
 La procedura di creazione delle montagne distanti si effettua sempre con Demex
 (se non avete la versione registrata va usato in modalità ``Demostration``)
 
+.. image:: images/demex_demonstration.jpg
+
 Le DM vanno sempre create nella cartella delle ROUTES di default (quantomeno deve essere presente USA2)
 
 1. Mediante RGE create, nella stessa cartella, una ROUTE chiamata TEMPORANEA

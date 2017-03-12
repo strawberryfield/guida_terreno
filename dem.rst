@@ -4,6 +4,13 @@
 Modellare il terreno
 ********************
 
+Con il procedimento del capitolo precedente abbiamo creato la cosidetta 
+*distesa siberiana* ovvero un terreno uniformemente piatto per tutta l'estensione
+della nostra route.
+
+In questo capitolo ci occuperemo di modellare i rilievi utilizzando 
+dati di elevazione disponibili in appositi database, le codidette DEM.
+
 .. _dem_import:
 
 Caricare le DEM
@@ -11,12 +18,24 @@ Caricare le DEM
 
 Apriamo Demex, se non abbiamo la versione registrata utilizziamolo in modalità ``Unregistered``
 
-Nella successiva finestra che appare, cliccare sul men? "File" e dal men? a tendina che si apre selezionare la voce "Open"; questo far? aprire la finestra "Select DEM data" dove noi andremo a digitare il percorso relativo al nostro DEM ( di solito ---> C:mapdataDEMs ).
-Adesso selezioniamo il nostro file *.DEM ( Lazio - Umbria.DEM )e clicchiamo sul pulsante "Apri" ( oppure direttamente doppio click sul nome del nostro file ) e all'interno di DEMEX apparir? una mappa riferita al nostro DEM.
-Ora che abbiamo selezionato il nostro DEM, lo dobbiamo importare nella nostra route all'interno dell'R.E.
-Quindi, sempre da DEMEX, riaprire il men? "File" e dal men? a tendina che si apre selezionare la voce "Select Route".
-Questa operazione aprir? la finestra "Select MSTS Route", dove noi andremo a selezionare la nostra route ( Route Fantasy ) che abbiamo precedentemente creato con il R.G.E. ( Route Geometry Extractor ).
-Una volta selezionata la nostra route, clicchiamo su "OK" e vedremo comparire la griglia dei tile della nostra route, precedentemente creata con l'R.G.E. ( sottoforma di quadrati rossi con una croce all'interno ), sovrapposta al DEM all'interno di DEMEX.
+.. image:: images/demex_unregistered.jpg
+
+Nel menù ``File`` selezioniamo ``Open`` e selezioniamo il file con le DEM.
+
+Se abbiamo necessità di utilizzare più files DEM per coprire l'area della nostra route
+dobbiamo tornare nel menù ``File`` e selezionare ``Merge DEM`` per aggiungere tutti gli altri file.
+
+Nella finestra di Demex apparirà una mappa, che sembra una radiografia, con la rappresentazione del terreno 
+(più la mappa è chiara maggiore è l'altitudine del terreno).
+
+.. image:: images/demex1.jpg
+
+Ora dobbiamo importare la nostra route. 
+Quindi nel menù ``File`` selezioniamo la voce ``Select Route`` e dall'elenco la nostra route.
+
+Vedremo comparire la griglia dei tile della nostra route sovrapposta al DEM.
+
+.. image:: images/demex2.jpg
 
 
 .. _quad_tree:
@@ -24,12 +43,12 @@ Una volta selezionata la nostra route, clicchiamo su "OK" e vedremo comparire la
 Generare le montagne
 ====================
 
-Ora apriamo il men? "Standard terrain" e selezioniamo la voce "Create Route Terrain".
-A questo punto DEMEX avvier? il procedimento dell'importazione dei dati DEM all'interno dei tile della nostra route.
-Quando DEMEX ha finito, appare una finestra di "report" sull'avvenuta estrazione dei DEM nei tile della route.
-Cliccare su "OK" e chiudere DEMEX.
+Ora apriamo il menù ``Standard terrain`` e selezioniamo la voce ``Create Route Terrain``.
 
-Adesso andiamo a riaprire l'R.E. ( Route Editor ), selezioniamo la nostra route e clicchiamo su "OK".
-Questo procedimento avvier? il "Generating terrain buffer..."
-Una volta che l'editor ha finito di generare il terreno della route avremo il terreno gi? modellato.
+Si avvierà il processo di importazione dei dati DEM all'interno dei tile della nostra route.
+Al termine apparirà una finestra di ``report`` sull'avvenuta estrazione dei DEM nei tile della route;
+confermiamo ``OK`` e chiudiamo Demex.
 
+Riaprendo il ``Route Editor`` possiamo vedere il terreno della route modellato.
+
+.. image:: images/scrgrb0-450.jpg
