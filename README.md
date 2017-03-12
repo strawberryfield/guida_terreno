@@ -51,3 +51,15 @@ Infine il comando
 pulirà completamente la cartella `_build` 
 (utile in caso di modifiche per evitare che restino vecchi files inutili)
 
+### Aggiornare il sito web collegato
+
+Il progetto github ha associato un sito web contenuto nella cartella `docs`
+che contiene la versione html di questa guida ed i download delle versioni
+PDF ed EPUB.
+
+Per agevolare l'aggiornamento del sito si può utilizzare lo script
+
+    makesite
+	
+che compila le varie versioni e copia i files nella cartella `docs`
+
