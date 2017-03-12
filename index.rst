@@ -9,6 +9,8 @@ Guida alla creazione del terreno per MSTS e OR
 .. toctree::
     :maxdepth: 3
     :numbered:
+    :name: mastertoc
+    :caption: Sommario
 
     software
     main
@@ -20,3 +22,4 @@ Guida alla creazione del terreno per MSTS e OR
     acknowledgements
     download
     legal
+	
