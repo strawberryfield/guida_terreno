@@ -10,7 +10,7 @@ Caricare le DEM
 ===============
 
 Apriamo Demex, se non abbiamo la versione registrata utilizziamolo in modalità ``Unregistered``
-Avviare il programma DEMEX e cliccare sulla voce "Unregistered Mode".
+
 Nella successiva finestra che appare, cliccare sul men? "File" e dal men? a tendina che si apre selezionare la voce "Open"; questo far? aprire la finestra "Select DEM data" dove noi andremo a digitare il percorso relativo al nostro DEM ( di solito ---> C:mapdataDEMs ).
 Adesso selezioniamo il nostro file *.DEM ( Lazio - Umbria.DEM )e clicchiamo sul pulsante "Apri" ( oppure direttamente doppio click sul nome del nostro file ) e all'interno di DEMEX apparir? una mappa riferita al nostro DEM.
 Ora che abbiamo selezionato il nostro DEM, lo dobbiamo importare nella nostra route all'interno dell'R.E.

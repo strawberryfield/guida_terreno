@@ -30,3 +30,14 @@ La versione registrata può realizzare le montagne distanti in maniera semplific
 la funzione delle montagne distanti o si accetta la complicazione spiegata più avanti si può
 procedere anche con la versione non registrata.
 
+Demex in sistemi a 64 bit
+-------------------------
+
+Demex è un programma piuttsto vecchio, ma ancora oggi perfettamente funzionale. Solo l'installer ha
+problemi con i sistemi operativi a 64 bit.
+
+Fortunatamente qualcuno ha realizzato una distribuzione particolare senza installer (è uno zip da scompattare)
+che permette di avere Demex anche sulle macchine a 64bit ormai sempre più diffuse.
+
+Lo trovate a `questo link su Elvas Tower <http://www.elvastower.com/forums/index.php?/files/file/2286-adding-demex-to-a-windows-64-bit-operating-system/>`_ 
+(per poter procedere al download è necessario registrarsi)
