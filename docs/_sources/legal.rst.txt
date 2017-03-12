@@ -7,7 +7,7 @@ Note legali
 Garanzia
 ========
 
-NESSUNA GARANZIA: Questa opera è fornita dall'autore "così com'è" e qualsiasi
+NESSUNA GARANZIA: Quest'opera è fornita dall'autore "così com'è" e qualsiasi
 garanzia espressa o implicita, inclusiva di, ma non limitata a, garanzie implicite
 di commerciabilità e idoneità ad uno scopo particolare, viene disconosciuta. In nessun caso il possessore
 di copyright sarà ritenuto responsabile per qualsiasi danno diretto, indiretto, connesso, particolare,
@@ -16,13 +16,16 @@ perdita di utilità, dati o profitti; interruzione di affari) comunque causati e
 responsabilità, come da contratto, responsabilità oggettiva, o torto (compresa negligenza o altro)
 derivante in qualsiasi modo dall'utilizzo di questa opera anche se al corrente della possibilità di tale danno.
 
+Questo lavoro è stato fatto al solo scopo di divertirsi e sperando possa essere utile a qualcuno;
+se non vi piace semplicemente cancellatelo.
+
 Riconoscimenti della proprietà
 ==============================
 
 Casasoft, The Strawberry Field e le relative rappresentazioni grafiche
 sono di proprietà di Roberto Ceccarelli. 
 Tutti gli altri marchi e loghi sono sono proprietà degli aventi diritto 
-e sono utilizzati per identificare società prodotti e servizi.
+e sono utilizzati per identificare società, prodotti e servizi.
 
 Accordi di Copyright e Licenza
 ==============================

@@ -16,7 +16,7 @@ Va anche ricordato il sito spagnolo `Trensimpedia <http://www.trensim.com/trensi
 la cui `guida alla modellazione del terreno <http://www.trensim.com/trensimpedia/index.php?title=MSTS:Modelado_de_terreno_con_Demex>`_
 svela il "trucco" per creare le montagne distanti senza Demex registrato.
 
-Una menzione particolare va a Peter Gulyas che mi ha fatto conoscere `ReStrxturedText <http://docutils.sourceforge.net/rst.html>`_ 
+Una menzione particolare va a Peter Gulyas che mi ha fatto conoscere `ReStructuredText <http://docutils.sourceforge.net/rst.html>`_ 
 che ho utilizzato per redigere questa guida.
 
 
