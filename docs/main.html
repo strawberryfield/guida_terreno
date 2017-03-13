@@ -91,7 +91,11 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="software.html">1. Software necessario</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">2. Creare la route</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#parametri-generali">2.1. Parametri generali</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#parametri-generali">2.1. Parametri generali</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#caratteristiche-della-linea">2.1.1. Caratteristiche della linea</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#creazione-della-route-vuota">2.1.2. Creazione della route vuota</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#definire-l-area">2.2. Definire l&#8217;area</a></li>
 </ul>
 </li>
@@ -149,13 +153,90 @@
             
   <div class="section" id="creare-la-route">
 <span id="start"></span><h1>2. Creare la route<a class="headerlink" href="#creare-la-route" title="Permalink to this headline">¶</a></h1>
+<p>Prima di costruire una nuova linea ferroviaria nel simulatore è necessario creare lo scenario (route)
+ovvero lo spazio a disposizione per poter stendere i binari. Questo è possibile utilizzando il programma Route Geometry Extractor.</p>
 <div class="section" id="parametri-generali">
 <span id="parametri"></span><h2>2.1. Parametri generali<a class="headerlink" href="#parametri-generali" title="Permalink to this headline">¶</a></h2>
-<p>Apriamo Microsoft Train Simulator Editor &amp; Tools</p>
+<p>Apriamo <code class="docutils literal"><span class="pre">Microsoft</span> <span class="pre">Train</span> <span class="pre">Simulator</span> <span class="pre">Editor</span> <span class="pre">&amp;</span> <span class="pre">Tools</span></code>
+e selezioniamo l&#8217;ultima riga ovvero <code class="docutils literal"><span class="pre">Route</span> <span class="pre">Geometry</span> <span class="pre">Extractor</span></code>.</p>
+<img alt="_images/select_rge.jpg" src="_images/select_rge.jpg" />
+<p>Apriamo il menù <code class="docutils literal"><span class="pre">File</span></code> e clicchiamo su <code class="docutils literal"><span class="pre">New</span> <span class="pre">Route</span></code>: si aprirà la finestra <code class="docutils literal"><span class="pre">Create</span> <span class="pre">New</span> <span class="pre">Route</span></code></p>
+<img alt="_images/newroute.jpg" src="_images/newroute.jpg" />
+<p>Inserire il <code class="docutils literal"><span class="pre">Route</span> <span class="pre">Name</span></code> (nome della linea).
+In questo campo è necessario inserire il nome e la descrizione della nuova linea (es. <em>Ferrovie del Marecchia</em>).
+Se volete potete cliccare il tasto <code class="docutils literal"><span class="pre">Edit</span></code> e inserire la descrizione della linea e premete OK.
+Questo nome apparirà nella lista delle linee al lancio di Train Simulator.
+Nel campo <code class="docutils literal"><span class="pre">Directory</span></code> inserire un nome breve (es. <em>marecchia</em>). Questo nome sarà dato alla cartella che conterrà tutti gli strumenti del nuovo scenario (i file di configurazione, i terreni, le forme, le texture ecc.).</p>
+<div class="section" id="caratteristiche-della-linea">
+<h3>2.1.1. Caratteristiche della linea<a class="headerlink" href="#caratteristiche-della-linea" title="Permalink to this headline">¶</a></h3>
+<p>Nella stessa finestra è possibile anche specificare alcuni altri parametri della linea che andremo a costruire:</p>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal"><span class="pre">Electrified</span> <span class="pre">Track</span></code> va spuntata se la linea è elettrificata; e necessario anche specificare l’altezza in metri della linea aerea (es. 5.7 m).</li>
+<li>Nel campo <code class="docutils literal"><span class="pre">Terrain</span> <span class="pre">detail</span> <span class="pre">scale</span></code> si può variare il numero dei dettagli del terreno. Di solito è meglio lasciare il valore di default.</li>
+<li><code class="docutils literal"><span class="pre">Route</span> <span class="pre">speed</span> <span class="pre">limits</span></code>: è possibile specificare nuovi limiti di velocità massima e minima e decidere se usare i Km/h o le Mph (miglia orarie).</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="creazione-della-route-vuota">
+<h3>2.1.2. Creazione della route vuota<a class="headerlink" href="#creazione-della-route-vuota" title="Permalink to this headline">¶</a></h3>
+<p>Confermiamo le impostazioni date sopra premendo <code class="docutils literal"><span class="pre">OK</span></code>.</p>
+<p>Il <code class="docutils literal"><span class="pre">Route</span> <span class="pre">Geometry</span> <span class="pre">Extractor</span></code> creerà una cartella della nuova linea sul disco fisso dentro alla cartella <code class="docutils literal"><span class="pre">Routes</span></code>;
+al termine dell&#8217;operazione apparirà un messaggio che informa che la nuova linea è stata creata
+e mostra la locazione della cartella.
+Confermiamo con <code class="docutils literal"><span class="pre">OK</span></code>.</p>
+<p>Se il tasto <code class="docutils literal"><span class="pre">OK</span></code> non fosse attivo assicuratevi di aver inserito il nome della linea e della cartella. È possibile che per creare la cartella sia necessario qualche decina di secondi. È possibile modificare i dati inseriti fino ad ora,
+eccetto il nome della cartella, in qualsiasi momento.</p>
+</div>
 </div>
 <div class="section" id="definire-l-area">
 <span id="quad-tree"></span><h2>2.2. Definire l&#8217;area<a class="headerlink" href="#definire-l-area" title="Permalink to this headline">¶</a></h2>
-<p>Selezioniamo l&#8217;area dove si trova la route</p>
+<p>Apriamo nuovamente il menù <code class="docutils literal"><span class="pre">File</span></code> e clicchiamo su <code class="docutils literal"><span class="pre">Select</span> <span class="pre">Route</span></code></p>
+<p>Ci apparirà un menu a tendina che permette di selezionare una linea,
+nel nostro caso selezioneremo quella appena creata
+e confermiamo con <code class="docutils literal"><span class="pre">OK</span></code></p>
+<p>Sempre nel menù <code class="docutils literal"><span class="pre">File</span></code> clicchiamo su <code class="docutils literal"><span class="pre">New</span> <span class="pre">Quad</span> <span class="pre">Tree</span></code></p>
+<p>Il nome della cartella della nuova linea e la scritta <code class="docutils literal"><span class="pre">Normal</span> <span class="pre">Terrain</span></code> appaiono sulla barra di stato in basso a sinistra. Non appare nient’altro finchè non selezioniamo il territorio.
+Cliccare con il tasto destro del mouse nella finestra dove appare la carta del mondo sulla zona dove vogliamo tracciare la nuova linea (es. Europa).</p>
+<img alt="_images/rge1.jpg" src="_images/rge1.jpg" />
+<p>Appare un menù dal quale selezioniamo <code class="docutils literal"><span class="pre">Zoom</span> <span class="pre">Region</span></code>. Ripetiamo quest’ultimo passo per ingrandire ancora.</p>
+<p>A questo punto per ingrandire ulteriormente, occorre cliccare con il tasto destro e selezionare <code class="docutils literal"><span class="pre">Zoom</span> <span class="pre">Window</span></code>.
+Possiamo usare quest’ultimo comando per ingrandire di nuovo fino ad un massimo di tre volte.
+Dovremmo vedere anche delle linee rosse che rappresentano le linee ferroviarie della zona selezionata: ci sono anche linee
+dismesse (nell&#8217;esempio si vede la linea da Fabriano ad Urbino ed oltre, la Fano-Fermignano...), ma non è
+il caso di fidarsi troppo dell&#8217;accuratezza di quei dati.</p>
+<img alt="_images/rge2.jpg" src="_images/rge2.jpg" />
+<p>Per evitare di perdere di vista la regione selezionata durante i ripetuti ingrandimenti, e per avere riferimenti più precisi,
+è consigliabile utilizzare la latitudine (lat) e la longitudine (lon) mostrate sulla barra di stato in basso allo schermo
+confrontandole con i dati che potete ricavare da <a class="reference external" href="https://www.google.it/maps/&#64;44.0535197,12.5396675,13z?hl=it">Google Maps</a>
+cliccando sulla mappa.</p>
+<img alt="_images/googlemaps.jpg" src="_images/googlemaps.jpg" />
+<p>Tracciamo un rettangolo intorno alla zona occupata dalla linea (tenendo premuto il tasto sinistro del mouse).
+Clicchiamo con il tasto destro all’interno dell’area selezionata e selezioniamo <code class="docutils literal"><span class="pre">Add</span> <span class="pre">All</span> <span class="pre">Selection</span> <span class="pre">Tiles</span></code> dal menù che appare.</p>
+<p>Questo crea una griglia di quadrati neri sopra la regione selezionata. I più piccoli rappresentano <em>tiles</em> (mattonelle) di terreno di 2 Km di lato. Si può ripetere questa procedura per incrementare l’area coperta da questi quadrati.
+Non importa se viene selezionata un’area maggiore del necessario, in ogni momento possono essere rimossi o aggiunti quadrati.</p>
+<p>Per selezionare i quadrati da usare come mattonelle di terreno tracciamo un rettangolo intorno alla regione da esportare.
+Clicchiamo con il tasto destro del mouse all’interno della zona selezionata e scegliamo <code class="docutils literal"><span class="pre">Toggle</span> <span class="pre">Populated</span> <span class="pre">State</span></code> dal menù.</p>
+<p>I quadrati selezionati diventeranno blu.</p>
+<img alt="_images/rge_quadtree.jpg" src="_images/rge_quadtree.jpg" />
+<p>Occorre ripetere questo processo fino ad includere tutta l’area desiderata.
+E&#8217; possibile anche selezionare le mattonelle una per volta cliccando con il tasto destro sopra ogni mattonella e selezionando Toggle Populated State. Se rimangono zone selezionate cliccare con il tasto sinistro in una qualsiasi altra zona della mappa.</p>
+<p>Se avete selezionato erroneamente qualche mattonella premete di nuovo <code class="docutils literal"><span class="pre">Toggle</span> <span class="pre">Populated</span> <span class="pre">State</span></code> su una o più mattonelle.</p>
+<p>Finita la selezione apriamo il menù <code class="docutils literal"><span class="pre">Edit</span></code> e selezioniamo <code class="docutils literal"><span class="pre">Minimize</span> <span class="pre">Quad</span> <span class="pre">Tree</span></code>.
+Quando vedrete il messaggio</p>
+<blockquote>
+<div>This will remove empty quad tree nodes. Continue?</div></blockquote>
+<p>Premere <code class="docutils literal"><span class="pre">Yes</span></code>.
+Ciò riduce le dimensioni del file della linea al minimo essenziale.</p>
+<p>Salviamo il tutto andando nel menù <code class="docutils literal"><span class="pre">File</span></code> e scegliendo <code class="docutils literal"><span class="pre">Save</span> <span class="pre">Quad</span> <span class="pre">Tree</span></code>.</p>
+<p>A questo punto possiamo generare la struttura di files che conterrà la nostra route:
+apriamo il menù <code class="docutils literal"><span class="pre">Edit</span></code> e selezioniamo <code class="docutils literal"><span class="pre">Generate</span> <span class="pre">Flagged</span> <span class="pre">Tiles</span></code>.</p>
+<p>Apparirà un messaggio che indica il numero di tiles che devono essere generati chiedendo conferma.
+Nella barra di stato in basso a sinistra appare il numero di mattonelle che si stanno generando.</p>
+<p>Come ultima operazione clicchiamo con il tasto destro su una delle mattonelle
+per selezionare dove iniziare la costruzione della linea e selezioniamo <code class="docutils literal"><span class="pre">Route</span> <span class="pre">Editor</span> <span class="pre">Start</span> <span class="pre">Tile</span></code>.
+Non è particolarmente importante sia il tile esatto, ci sono modi molto efficienti per muoversi
+all&#8217;interno del <code class="docutils literal"><span class="pre">Route</span> <span class="pre">editor</span></code>.</p>
 </div>
 </div>
 

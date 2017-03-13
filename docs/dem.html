@@ -149,13 +149,34 @@
             
   <div class="section" id="modellare-il-terreno">
 <span id="standard-terrain"></span><h1>3. Modellare il terreno<a class="headerlink" href="#modellare-il-terreno" title="Permalink to this headline">¶</a></h1>
+<p>Con il procedimento del capitolo precedente abbiamo creato la cosidetta
+<em>distesa siberiana</em> ovvero un terreno uniformemente piatto per tutta l&#8217;estensione
+della nostra route.</p>
+<p>In questo capitolo ci occuperemo di modellare i rilievi utilizzando
+dati di elevazione disponibili in appositi database, le codidette DEM.</p>
 <div class="section" id="caricare-le-dem">
 <span id="dem-import"></span><h2>3.1. Caricare le DEM<a class="headerlink" href="#caricare-le-dem" title="Permalink to this headline">¶</a></h2>
 <p>Apriamo Demex, se non abbiamo la versione registrata utilizziamolo in modalità <code class="docutils literal"><span class="pre">Unregistered</span></code></p>
+<img alt="_images/demex_unregistered.jpg" src="_images/demex_unregistered.jpg" />
+<p>Nel menù <code class="docutils literal"><span class="pre">File</span></code> selezioniamo <code class="docutils literal"><span class="pre">Open</span></code> e selezioniamo il file con le DEM.</p>
+<p>Se abbiamo necessità di utilizzare più files DEM per coprire l&#8217;area della nostra route
+dobbiamo tornare nel menù <code class="docutils literal"><span class="pre">File</span></code> e selezionare <code class="docutils literal"><span class="pre">Merge</span> <span class="pre">DEM</span></code> per aggiungere tutti gli altri file.</p>
+<p>Nella finestra di Demex apparirà una mappa, che sembra una radiografia, con la rappresentazione del terreno
+(più la mappa è chiara maggiore è l&#8217;altitudine del terreno).</p>
+<img alt="_images/demex1.jpg" src="_images/demex1.jpg" />
+<p>Ora dobbiamo importare la nostra route.
+Quindi nel menù <code class="docutils literal"><span class="pre">File</span></code> selezioniamo la voce <code class="docutils literal"><span class="pre">Select</span> <span class="pre">Route</span></code> e dall&#8217;elenco la nostra route.</p>
+<p>Vedremo comparire la griglia dei tile della nostra route sovrapposta al DEM.</p>
+<img alt="_images/demex2.jpg" src="_images/demex2.jpg" />
 </div>
 <div class="section" id="generare-le-montagne">
-<span id="quad-tree"></span><h2>3.2. Generare le montagne<a class="headerlink" href="#generare-le-montagne" title="Permalink to this headline">¶</a></h2>
-<p>Selezioniamo la route da modellare</p>
+<span id="generate-standard-terrain"></span><h2>3.2. Generare le montagne<a class="headerlink" href="#generare-le-montagne" title="Permalink to this headline">¶</a></h2>
+<p>Ora apriamo il menù <code class="docutils literal"><span class="pre">Standard</span> <span class="pre">terrain</span></code> e selezioniamo la voce <code class="docutils literal"><span class="pre">Create</span> <span class="pre">Route</span> <span class="pre">Terrain</span></code>.</p>
+<p>Si avvierà il processo di importazione dei dati DEM all&#8217;interno dei tile della nostra route.
+Al termine apparirà una finestra di <code class="docutils literal"><span class="pre">report</span></code> sull&#8217;avvenuta estrazione dei DEM nei tile della route;
+confermiamo <code class="docutils literal"><span class="pre">OK</span></code> e chiudiamo Demex.</p>
+<p>Riaprendo il <code class="docutils literal"><span class="pre">Route</span> <span class="pre">Editor</span></code> possiamo vedere il terreno della route modellato.</p>
+<img alt="_images/scrgrb0-450.jpg" src="_images/scrgrb0-450.jpg" />
 </div>
 </div>
 

@@ -38,7 +38,7 @@ Vedremo comparire la griglia dei tile della nostra route sovrapposta al DEM.
 .. image:: images/demex2.jpg
 
 
-.. _quad_tree:
+.. _generate_standard_terrain:
 
 Generare le montagne
 ====================

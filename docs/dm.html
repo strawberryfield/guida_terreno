@@ -147,6 +147,39 @@
 <span id="distant-mountains"></span><h1>4. Modellare le montagne distanti<a class="headerlink" href="#modellare-le-montagne-distanti" title="Permalink to this headline">¶</a></h1>
 <p>La procedura di creazione delle montagne distanti si effettua sempre con Demex
 (se non avete la versione registrata va usato in modalità <code class="docutils literal"><span class="pre">Demostration</span></code>)</p>
+<img alt="_images/demex_demonstration.jpg" src="_images/demex_demonstration.jpg" />
+<p>Accertiamoci che fra le route sia presente lo scenario di default USA2 (Marias Pass):
+durante il processo di costruzione vengono prelevati alcuni files da questa route.</p>
+<p>Apriamo il <code class="docutils literal"><span class="pre">Route</span> <span class="pre">Geometry</span> <span class="pre">Extractor</span></code> e creiamo una route chiamata <em>Temporanea</em>: non è necessario creare il
+quad-tree, bastano solo i parametri generali.</p>
+<p>Apriamo Demex (se non avete la versione registrata va usato in modalità <code class="docutils literal"><span class="pre">Demostration</span></code>),
+Selezionare la propria ROUTE
+Da <code class="docutils literal"><span class="pre">File</span></code>   <code class="docutils literal"><span class="pre">Refresh</span> <span class="pre">Route</span> <span class="pre">Tiles</span></code>
+<code class="docutils literal"><span class="pre">DM</span> <span class="pre">Terrain</span></code> <code class="docutils literal"><span class="pre">Prepare</span> <span class="pre">Route</span></code> <code class="docutils literal"><span class="pre">OK</span></code>
+Minimizzare Demex</p>
+<p>Apriamo nuovamente il <code class="docutils literal"><span class="pre">Route</span> <span class="pre">Geometry</span> <span class="pre">Extractor</span></code> e quindi apriamo la nostra route</p>
+<p><code class="docutils literal"><span class="pre">File</span></code> <code class="docutils literal"><span class="pre">Load</span> <span class="pre">Quad</span> <span class="pre">Tree</span></code> e ingrandire al massimo centrando la ROUTE
+Cliccare il pulsante DM con freccia in basso
+Con tasto sinistro fare un rettangolo grande che comprenda dentro la vs. ROUTE.
+Con tasto destro <code class="docutils literal"><span class="pre">Add</span> <span class="pre">all</span> <span class="pre">Selection</span> <span class="pre">Tiles</span></code>
+Sempre con tasto destro <code class="docutils literal"><span class="pre">Toggle</span> <span class="pre">Populated</span> <span class="pre">State</span></code>
+<code class="docutils literal"><span class="pre">File</span></code> <code class="docutils literal"><span class="pre">Save</span> <span class="pre">Quad</span> <span class="pre">Tree</span></code>
+<code class="docutils literal"><span class="pre">Edit</span></code> <code class="docutils literal"><span class="pre">Generate</span> <span class="pre">Flagged</span> <span class="pre">Tiles</span></code>
+<code class="docutils literal"><span class="pre">File</span></code> <code class="docutils literal"><span class="pre">Save</span> <span class="pre">Quad</span> <span class="pre">Tree</span></code></p>
+<p>Possiamo chiudere il <code class="docutils literal"><span class="pre">Route</span> <span class="pre">Geometry</span> <span class="pre">Extractor</span></code></p>
+<p>Ingrandiamo Demex</p>
+<p><code class="docutils literal"><span class="pre">File</span></code> <code class="docutils literal"><span class="pre">Refresh</span> <span class="pre">Route</span> <span class="pre">Files</span></code>
+<code class="docutils literal"><span class="pre">DM</span> <span class="pre">Terrain</span></code> <code class="docutils literal"><span class="pre">Select</span> <span class="pre">Temporary</span> <span class="pre">Route</span></code> <code class="docutils literal"><span class="pre">OK</span></code>
+<code class="docutils literal"><span class="pre">DM</span> <span class="pre">Terrain</span></code> <code class="docutils literal"><span class="pre">Clone</span> <span class="pre">DM</span> <span class="pre">terrain</span> <span class="pre">from</span> <span class="pre">std.</span> <span class="pre">Terrain</span></code> <code class="docutils literal"><span class="pre">OK</span></code></p>
+<p>Minimizzare DEMEX</p>
+<p>Apriamo il <code class="docutils literal"><span class="pre">Route</span> <span class="pre">Editor</span></code></p>
+<p>Selezionare la Route Temporanea creando quindi il Terrain Buffer. Così facendo si creano i Tiles nell’omonima cartella della Route temporanea</p>
+<p>Chiudiamo il <code class="docutils literal"><span class="pre">Route</span> <span class="pre">Editor</span></code></p>
+<p>Ingrandiamo nuovamente Demex</p>
+<p><code class="docutils literal"><span class="pre">DM</span> <span class="pre">Terrain</span></code> <code class="docutils literal"><span class="pre">Copy</span> <span class="pre">DM</span> <span class="pre">Tiles</span> <span class="pre">back</span> <span class="pre">to</span> <span class="pre">ROUTE</span></code> <code class="docutils literal"><span class="pre">OK</span></code></p>
+<p>Chiudere definitivamente Demex</p>
+<p>Controllare nelle cartelle LO-TILES e TD della vostra route ci siano I fles corretti.
+Aprire la route in MSTS (si presume abbiate creato una mini activity e quindi un Path funzionante e vdere se le DM ci sono</p>
 </div>
 
 
