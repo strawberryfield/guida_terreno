@@ -13,6 +13,10 @@ Generare il quad-tree nella route temporanea
 ============================================
 
 Apriamo con il ``Route Geometry Extractor`` la route temporanea e
+nel menù ``File`` clicchiamo su ``New Quad Tree``
+
+Dobbiamo adesso creare un quad-tree identico a quello delle distant mountains,
+con i quadrettoni grandi.
 
 Modellare il terreno con Demex
 ==============================

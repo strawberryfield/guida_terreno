@@ -33,6 +33,8 @@ Nella finestra di Demex apparirà una mappa, che sembra una radiografia, con la 
 Ora dobbiamo importare la nostra route. 
 Quindi nel menù ``File`` selezioniamo la voce ``Select Route`` e dall'elenco la nostra route.
 
+.. image:: images/dm3.jpg
+
 Vedremo comparire la griglia dei tile della nostra route sovrapposta al DEM.
 
 .. image:: images/demex2.jpg

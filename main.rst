@@ -44,6 +44,9 @@ Confermiamo le impostazioni date sopra premendo ``OK``.
 Il ``Route Geometry Extractor`` creerà una cartella della nuova linea sul disco fisso dentro alla cartella ``Routes``;
 al termine dell'operazione apparirà un messaggio che informa che la nuova linea è stata creata
 e mostra la locazione della cartella. 
+
+.. image:: images/dm2.jpg
+
 Confermiamo con ``OK``.
 
 Se il tasto ``OK`` non fosse attivo assicuratevi di aver inserito il nome della linea e della cartella. È possibile che per creare la cartella sia necessario qualche decina di secondi. È possibile modificare i dati inseriti fino ad ora,
