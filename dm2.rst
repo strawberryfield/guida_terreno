@@ -18,15 +18,47 @@ nel menù ``File`` clicchiamo su ``New Quad Tree``
 Dobbiamo adesso creare un quad-tree identico a quello delle distant mountains,
 con i quadrettoni grandi.
 
+Generare il quad-tree
+---------------------
+
+Selezioniamo l'area occupata dalle Distant Mountains, 
+all'interno della selezione, cliccando con il tasto destro del mouse appare un menu
+dal quale dobbiamo selezionare ``Add all Selection Tiles``. Possiamo ripetere l'operazione
+più volte fino a selezionare tutta la zona che ci interessa.
+
+Notiamo che abbiamo i quadrettini piccoli (in effetti è un terreno normale). 
+Clicchiamo su un quadrettino con il tasto destro del mouse e scegliamo ``Merge tiles``
+e vedremo il nostro quadretto quadruplicarsi. Ripetiamo altre due volte l'operazione
+sullo stesso quadretto ed avremo un tile della stessa dimensione di quello delle Distant Mountains.
+
+Con pazienza ingrandiamo anche tutti gli altri quadretti.
+
+.. image:: images/dm9.jpg
+
+Infine, sempre cliccando con il tasto destro del mouse sui quadrettoni, 
+dal menu selezioniamo ``Toggle Populated State`` per gli stessi quadrettoni
+selezionati per le distant mountains del capitolo precedente.
+
 Modellare il terreno con Demex
 ==============================
 
-Aprimao Demex in modalità ``Unregistered`` carichiamo le DEM come visto in precedenza e 
+Apriamo Demex in modalità ``Unregistered``.
+
+.. image:: images/demex_unregistered.jpg
+
+Carichiamo le DEM come visto in precedenza e 
 selezioniamo la route temporanea.
+
+Ora apriamo il menù ``Standard terrain`` e selezioniamo la voce ``Create Route Terrain``.
+
+Al termine dell'operazione possiamo chiudere Demex
 
 Trasferire i tiles
 ==================
 
-A Questo punto non ci resta che copiare tutti i files contenuti nella cartella ``TILES``
+A questo punto non ci resta che copiare tutti i files contenuti nella cartella ``TILES``
 della route temporanea nella cartella ``LO_TILES`` della route effettiva sovrascrivendo quelli esistenti.
 Ora abbiamo delle Distant Mountains complete.
+
+In effetti files generati con questa procedura risultano 16 volte più ingombranti rispetto a quelli
+che si ottengono con il Demex registrato, ma il loro ingombro complessivo non dovrebbe spaventare nessuno.
