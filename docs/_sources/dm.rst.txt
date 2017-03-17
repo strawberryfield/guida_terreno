@@ -12,14 +12,16 @@ La procedura di creazione delle montagne distanti si effettua sempre con Demex
 Accertiamoci che fra le route sia presente lo scenario di default USA2 (Marias Pass):
 durante il processo di costruzione vengono prelevati alcuni files da questa route.
 
+Creare la route temporanea
+==========================
+
 Apriamo il ``Route Geometry Extractor`` e creiamo una route chiamata *Temporanea*: non è necessario creare il 
 quad-tree, bastano solo i parametri generali.
 
 .. image:: images/dm1.jpg
 
-Apriamo Demex (se non avete la versione registrata va usato in modalità ``Demostration``)
-
-Quindi nel menù ``File`` selezioniamo la voce ``Select Route`` e dall'elenco la nostra route.
+Apriamo Demex (se non avete la versione registrata va usato in modalità ``Demostration``), 
+quindi nel menù ``File`` selezioniamo la voce ``Select Route`` e dall'elenco la nostra route.
 
 .. image:: images/dm3.jpg
 
@@ -30,6 +32,9 @@ Poi dal menu ``Distant Mountains Terrain`` selezioniamo ``Prepare Route``
 .. image:: images/dm4.jpg
 
 Confermiamo con ``OK`` e minimizziamo Demex.
+
+Generare il quad-tree
+=====================
 
 Apriamo nuovamente il ``Route Geometry Extractor`` e quindi apriamo la nostra route
 
@@ -51,40 +56,51 @@ dal menu selezioniamo ``Toggle Populated State`` (all'interno dei quadrati appar
 
 .. image:: images/dm5.jpg
 
-``File`` ``Save Quad Tree``
-``Edit`` ``Generate Flagged Tiles``
-``File`` ``Save Quad Tree``
+Salviamo il quad-tree (da ``File`` clicchiamo su ``Save Quad Tree``) e 
+facciamo generare la struttura andando nel menu
+``Edit`` e cliccando su ``Generate Flagged Tiles``.
 
-Possiamo chiudere il ``Route Geometry Extractor``
+Salviamo nuovamente il quad-tree (da ``File`` il solito ``Save Quad Tree``)
 
-Ingrandiamo Demex
+Possiamo chiudere il ``Route Geometry Extractor`` e tutto 
+``Train Simulator Editors & Tools`` ed ingrandire di nuovo Demex.
 
-``File`` ``Refresh Route Files``
-``Distant Mountains Terrain`` ``Select Temporary Route`` ``OK``
+Applicare le DEM
+================
 
-Utilizzando il sesto ed il settimo bottone della toolbar possiamo passare dal quad-tree del terreno normale a quello
-delle distant mountains, selezioniamo ovviamente queste ultime.
+Ricarichiamo i dati della route andando in ``File`` e cliccando su ``Refresh Route Files``
+
+Poi dal menu ``Distant Mountains Terrain`` clicchiamo su ``Select Temporary Route``;
+dalla tendina scegliamo la route temporanea che abbiamo creato all'inizio della procedura.
+
+.. image:: images/dm6.jpg
+
+A questo punto 
+utilizzando il sesto ed il settimo bottone della toolbar (che prima era disattivato)
+possiamo passare dal quad-tree del terreno normale a quello
+delle distant mountains: selezioniamo ovviamente queste ultime.
 
 Adesso dobbiamo caricare le DEM (eventualmente anche con il merge) come già fatto per il terreno normale. 
 Aiutatevi con lo zoom per vedere la mappa nel suo complesso. 
 
+.. image:: images/dm7.jpg
 
-``Distant Mountains Terrain`` ``Create distant mountain Terrain -step 3`` ``OK``
+Siamo finalmente pronti a generare le distant mountains:
+dal menu ``Distant Mountains Terrain`` scegliamo ``Create distant mountain Terrain -step 3``
 
-Minimizzare DEMEX
+.. image:: images/dm8.jpg
 
-Apriamo il ``Route Editor``
+Al termine dell'operazione confermiamo con ``OK``.
+
+Minimizziamo ancora una volta Demex ed apriamo il ``Route Editor``
 
 Selezionare la Route Temporanea creando quindi il Terrain Buffer. Così facendo si creano i Tiles nell’omonima cartella della Route temporanea
 
-Chiudiamo il ``Route Editor``
+Terminata la procedura di generazione terreno chiudiamo il ``Route Editor``.
 
 Ingrandiamo nuovamente Demex
 
-``Distant Mountains Terrain`` ``Copy DM tiles back to route -step 5`` ``OK``
+Andiamo nel menu ``Distant Mountains Terrain``  e selezioniamo la voce ``Copy DM tiles back to route -step 5``. 
+Al termine dell'operazione possiamo chiudere definitivamente Demex
 
-Chiudere definitivamente Demex
-
-Controllare nelle cartelle LO-TILES e TD della vostra route ci siano I fles corretti.
-Aprire la route in MSTS (si presume abbiate creato una mini activity e quindi un Path funzionante e vdere se le DM ci sono
 

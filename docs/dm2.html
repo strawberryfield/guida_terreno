@@ -94,7 +94,10 @@
 <li class="toctree-l1"><a class="reference internal" href="dem.html">3. Modellare il terreno</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dm.html">4. Modellare le montagne distanti</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">5. Completare le montagne distanti</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#generare-il-quad-tree-nella-route-temporanea">5.1. Generare il quad-tree nella route temporanea</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#generare-il-quad-tree-nella-route-temporanea">5.1. Generare il quad-tree nella route temporanea</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#generare-il-quad-tree">5.1.1. Generare il quad-tree</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#modellare-il-terreno-con-demex">5.2. Modellare il terreno con Demex</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#trasferire-i-tiles">5.3. Trasferire i tiles</a></li>
 </ul>
@@ -160,17 +163,39 @@ si possono avere delle montagne &#8220;complete&#8221;.</p>
 nel menù <code class="docutils literal"><span class="pre">File</span></code> clicchiamo su <code class="docutils literal"><span class="pre">New</span> <span class="pre">Quad</span> <span class="pre">Tree</span></code></p>
 <p>Dobbiamo adesso creare un quad-tree identico a quello delle distant mountains,
 con i quadrettoni grandi.</p>
+<div class="section" id="generare-il-quad-tree">
+<h3>5.1.1. Generare il quad-tree<a class="headerlink" href="#generare-il-quad-tree" title="Permalink to this headline">¶</a></h3>
+<p>Selezioniamo l&#8217;area occupata dalle Distant Mountains,
+all&#8217;interno della selezione, cliccando con il tasto destro del mouse appare un menu
+dal quale dobbiamo selezionare <code class="docutils literal"><span class="pre">Add</span> <span class="pre">all</span> <span class="pre">Selection</span> <span class="pre">Tiles</span></code>. Possiamo ripetere l&#8217;operazione
+più volte fino a selezionare tutta la zona che ci interessa.</p>
+<p>Notiamo che abbiamo i quadrettini piccoli (in effetti è un terreno normale).
+Clicchiamo su un quadrettino con il tasto destro del mouse e scegliamo <code class="docutils literal"><span class="pre">Merge</span> <span class="pre">tiles</span></code>
+e vedremo il nostro quadretto quadruplicarsi. Ripetiamo altre due volte l&#8217;operazione
+sullo stesso quadretto ed avremo un tile della stessa dimensione di quello delle Distant Mountains.</p>
+<p>Con pazienza ingrandiamo anche tutti gli altri quadretti.</p>
+<img alt="_images/dm9.jpg" src="_images/dm9.jpg" />
+<p>Infine, sempre cliccando con il tasto destro del mouse sui quadrettoni,
+dal menu selezioniamo <code class="docutils literal"><span class="pre">Toggle</span> <span class="pre">Populated</span> <span class="pre">State</span></code> per gli stessi quadrettoni
+selezionati per le distant mountains del capitolo precedente.</p>
+</div>
 </div>
 <div class="section" id="modellare-il-terreno-con-demex">
 <h2>5.2. Modellare il terreno con Demex<a class="headerlink" href="#modellare-il-terreno-con-demex" title="Permalink to this headline">¶</a></h2>
-<p>Aprimao Demex in modalità <code class="docutils literal"><span class="pre">Unregistered</span></code> carichiamo le DEM come visto in precedenza e
+<p>Apriamo Demex in modalità <code class="docutils literal"><span class="pre">Unregistered</span></code>.</p>
+<img alt="_images/demex_unregistered.jpg" src="_images/demex_unregistered.jpg" />
+<p>Carichiamo le DEM come visto in precedenza e
 selezioniamo la route temporanea.</p>
+<p>Ora apriamo il menù <code class="docutils literal"><span class="pre">Standard</span> <span class="pre">terrain</span></code> e selezioniamo la voce <code class="docutils literal"><span class="pre">Create</span> <span class="pre">Route</span> <span class="pre">Terrain</span></code>.</p>
+<p>Al termine dell&#8217;operazione possiamo chiudere Demex</p>
 </div>
 <div class="section" id="trasferire-i-tiles">
 <h2>5.3. Trasferire i tiles<a class="headerlink" href="#trasferire-i-tiles" title="Permalink to this headline">¶</a></h2>
-<p>A Questo punto non ci resta che copiare tutti i files contenuti nella cartella <code class="docutils literal"><span class="pre">TILES</span></code>
+<p>A questo punto non ci resta che copiare tutti i files contenuti nella cartella <code class="docutils literal"><span class="pre">TILES</span></code>
 della route temporanea nella cartella <code class="docutils literal"><span class="pre">LO_TILES</span></code> della route effettiva sovrascrivendo quelli esistenti.
 Ora abbiamo delle Distant Mountains complete.</p>
+<p>In effetti files generati con questa procedura risultano 16 volte più ingombranti rispetto a quelli
+che si ottengono con il Demex registrato, ma il loro ingombro complessivo non dovrebbe spaventare nessuno.</p>
 </div>
 </div>
 

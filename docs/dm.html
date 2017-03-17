@@ -92,7 +92,12 @@
 <li class="toctree-l1"><a class="reference internal" href="software.html">1. Software necessario</a></li>
 <li class="toctree-l1"><a class="reference internal" href="main.html">2. Creare la route</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dem.html">3. Modellare il terreno</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">4. Modellare le montagne distanti</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">4. Modellare le montagne distanti</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#creare-la-route-temporanea">4.1. Creare la route temporanea</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#generare-il-quad-tree">4.2. Generare il quad-tree</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#applicare-le-dem">4.3. Applicare le DEM</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="dm2.html">5. Completare le montagne distanti</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dm_download.html">6. Dove prelevare le DEM</a></li>
 <li class="toctree-l1"><a class="reference internal" href="biblio.html">7. Bibliografia</a></li>
@@ -150,16 +155,21 @@
 <img alt="_images/demex_demonstration.jpg" src="_images/demex_demonstration.jpg" />
 <p>Accertiamoci che fra le route sia presente lo scenario di default USA2 (Marias Pass):
 durante il processo di costruzione vengono prelevati alcuni files da questa route.</p>
+<div class="section" id="creare-la-route-temporanea">
+<h2>4.1. Creare la route temporanea<a class="headerlink" href="#creare-la-route-temporanea" title="Permalink to this headline">¶</a></h2>
 <p>Apriamo il <code class="docutils literal"><span class="pre">Route</span> <span class="pre">Geometry</span> <span class="pre">Extractor</span></code> e creiamo una route chiamata <em>Temporanea</em>: non è necessario creare il
 quad-tree, bastano solo i parametri generali.</p>
 <img alt="_images/dm1.jpg" src="_images/dm1.jpg" />
-<p>Apriamo Demex (se non avete la versione registrata va usato in modalità <code class="docutils literal"><span class="pre">Demostration</span></code>)</p>
-<p>Quindi nel menù <code class="docutils literal"><span class="pre">File</span></code> selezioniamo la voce <code class="docutils literal"><span class="pre">Select</span> <span class="pre">Route</span></code> e dall&#8217;elenco la nostra route.</p>
+<p>Apriamo Demex (se non avete la versione registrata va usato in modalità <code class="docutils literal"><span class="pre">Demostration</span></code>),
+quindi nel menù <code class="docutils literal"><span class="pre">File</span></code> selezioniamo la voce <code class="docutils literal"><span class="pre">Select</span> <span class="pre">Route</span></code> e dall&#8217;elenco la nostra route.</p>
 <img alt="_images/dm3.jpg" src="_images/dm3.jpg" />
 <p>Sempre dal menu <code class="docutils literal"><span class="pre">File</span></code> selezioniamo <code class="docutils literal"><span class="pre">Refresh</span> <span class="pre">Route</span> <span class="pre">Tiles</span></code></p>
 <p>Poi dal menu <code class="docutils literal"><span class="pre">Distant</span> <span class="pre">Mountains</span> <span class="pre">Terrain</span></code> selezioniamo <code class="docutils literal"><span class="pre">Prepare</span> <span class="pre">Route</span></code></p>
 <img alt="_images/dm4.jpg" src="_images/dm4.jpg" />
 <p>Confermiamo con <code class="docutils literal"><span class="pre">OK</span></code> e minimizziamo Demex.</p>
+</div>
+<div class="section" id="generare-il-quad-tree">
+<h2>4.2. Generare il quad-tree<a class="headerlink" href="#generare-il-quad-tree" title="Permalink to this headline">¶</a></h2>
 <p>Apriamo nuovamente il <code class="docutils literal"><span class="pre">Route</span> <span class="pre">Geometry</span> <span class="pre">Extractor</span></code> e quindi apriamo la nostra route</p>
 <p>Dal menu <code class="docutils literal"><span class="pre">File</span></code> scegliamo <code class="docutils literal"><span class="pre">Load</span> <span class="pre">Quad</span> <span class="pre">Tree</span></code> quindi ingrandiamo al massimo centrando la zona della nostra route.</p>
 <p>Dobbiamo quindi cliccare il pulsante delle distant mountains, quello con la freccia verso il basso.</p>
@@ -173,27 +183,37 @@ più volte fino a selezionare tutta la zona che ci interessa.</p>
 <p>Al termine della selezione, sempre cliccando con il tasto destro del mouse,
 dal menu selezioniamo <code class="docutils literal"><span class="pre">Toggle</span> <span class="pre">Populated</span> <span class="pre">State</span></code> (all&#8217;interno dei quadrati appare una X).</p>
 <img alt="_images/dm5.jpg" src="_images/dm5.jpg" />
-<p><code class="docutils literal"><span class="pre">File</span></code> <code class="docutils literal"><span class="pre">Save</span> <span class="pre">Quad</span> <span class="pre">Tree</span></code>
-<code class="docutils literal"><span class="pre">Edit</span></code> <code class="docutils literal"><span class="pre">Generate</span> <span class="pre">Flagged</span> <span class="pre">Tiles</span></code>
-<code class="docutils literal"><span class="pre">File</span></code> <code class="docutils literal"><span class="pre">Save</span> <span class="pre">Quad</span> <span class="pre">Tree</span></code></p>
-<p>Possiamo chiudere il <code class="docutils literal"><span class="pre">Route</span> <span class="pre">Geometry</span> <span class="pre">Extractor</span></code></p>
-<p>Ingrandiamo Demex</p>
-<p><code class="docutils literal"><span class="pre">File</span></code> <code class="docutils literal"><span class="pre">Refresh</span> <span class="pre">Route</span> <span class="pre">Files</span></code>
-<code class="docutils literal"><span class="pre">Distant</span> <span class="pre">Mountains</span> <span class="pre">Terrain</span></code> <code class="docutils literal"><span class="pre">Select</span> <span class="pre">Temporary</span> <span class="pre">Route</span></code> <code class="docutils literal"><span class="pre">OK</span></code></p>
-<p>Utilizzando il sesto ed il settimo bottone della toolbar possiamo passare dal quad-tree del terreno normale a quello
-delle distant mountains, selezioniamo ovviamente queste ultime.</p>
+<p>Salviamo il quad-tree (da <code class="docutils literal"><span class="pre">File</span></code> clicchiamo su <code class="docutils literal"><span class="pre">Save</span> <span class="pre">Quad</span> <span class="pre">Tree</span></code>) e
+facciamo generare la struttura andando nel menu
+<code class="docutils literal"><span class="pre">Edit</span></code> e cliccando su <code class="docutils literal"><span class="pre">Generate</span> <span class="pre">Flagged</span> <span class="pre">Tiles</span></code>.</p>
+<p>Salviamo nuovamente il quad-tree (da <code class="docutils literal"><span class="pre">File</span></code> il solito <code class="docutils literal"><span class="pre">Save</span> <span class="pre">Quad</span> <span class="pre">Tree</span></code>)</p>
+<p>Possiamo chiudere il <code class="docutils literal"><span class="pre">Route</span> <span class="pre">Geometry</span> <span class="pre">Extractor</span></code> e tutto
+<code class="docutils literal"><span class="pre">Train</span> <span class="pre">Simulator</span> <span class="pre">Editors</span> <span class="pre">&amp;</span> <span class="pre">Tools</span></code> ed ingrandire di nuovo Demex.</p>
+</div>
+<div class="section" id="applicare-le-dem">
+<h2>4.3. Applicare le DEM<a class="headerlink" href="#applicare-le-dem" title="Permalink to this headline">¶</a></h2>
+<p>Ricarichiamo i dati della route andando in <code class="docutils literal"><span class="pre">File</span></code> e cliccando su <code class="docutils literal"><span class="pre">Refresh</span> <span class="pre">Route</span> <span class="pre">Files</span></code></p>
+<p>Poi dal menu <code class="docutils literal"><span class="pre">Distant</span> <span class="pre">Mountains</span> <span class="pre">Terrain</span></code> clicchiamo su <code class="docutils literal"><span class="pre">Select</span> <span class="pre">Temporary</span> <span class="pre">Route</span></code>;
+dalla tendina scegliamo la route temporanea che abbiamo creato all&#8217;inizio della procedura.</p>
+<img alt="_images/dm6.jpg" src="_images/dm6.jpg" />
+<p>A questo punto
+utilizzando il sesto ed il settimo bottone della toolbar (che prima era disattivato)
+possiamo passare dal quad-tree del terreno normale a quello
+delle distant mountains: selezioniamo ovviamente queste ultime.</p>
 <p>Adesso dobbiamo caricare le DEM (eventualmente anche con il merge) come già fatto per il terreno normale.
 Aiutatevi con lo zoom per vedere la mappa nel suo complesso.</p>
-<p><code class="docutils literal"><span class="pre">Distant</span> <span class="pre">Mountains</span> <span class="pre">Terrain</span></code> <code class="docutils literal"><span class="pre">Create</span> <span class="pre">distant</span> <span class="pre">mountain</span> <span class="pre">Terrain</span> <span class="pre">-step</span> <span class="pre">3</span></code> <code class="docutils literal"><span class="pre">OK</span></code></p>
-<p>Minimizzare DEMEX</p>
-<p>Apriamo il <code class="docutils literal"><span class="pre">Route</span> <span class="pre">Editor</span></code></p>
+<img alt="_images/dm7.jpg" src="_images/dm7.jpg" />
+<p>Siamo finalmente pronti a generare le distant mountains:
+dal menu <code class="docutils literal"><span class="pre">Distant</span> <span class="pre">Mountains</span> <span class="pre">Terrain</span></code> scegliamo <code class="docutils literal"><span class="pre">Create</span> <span class="pre">distant</span> <span class="pre">mountain</span> <span class="pre">Terrain</span> <span class="pre">-step</span> <span class="pre">3</span></code></p>
+<img alt="_images/dm8.jpg" src="_images/dm8.jpg" />
+<p>Al termine dell&#8217;operazione confermiamo con <code class="docutils literal"><span class="pre">OK</span></code>.</p>
+<p>Minimizziamo ancora una volta Demex ed apriamo il <code class="docutils literal"><span class="pre">Route</span> <span class="pre">Editor</span></code></p>
 <p>Selezionare la Route Temporanea creando quindi il Terrain Buffer. Così facendo si creano i Tiles nell’omonima cartella della Route temporanea</p>
-<p>Chiudiamo il <code class="docutils literal"><span class="pre">Route</span> <span class="pre">Editor</span></code></p>
+<p>Terminata la procedura di generazione terreno chiudiamo il <code class="docutils literal"><span class="pre">Route</span> <span class="pre">Editor</span></code>.</p>
 <p>Ingrandiamo nuovamente Demex</p>
-<p><code class="docutils literal"><span class="pre">Distant</span> <span class="pre">Mountains</span> <span class="pre">Terrain</span></code> <code class="docutils literal"><span class="pre">Copy</span> <span class="pre">DM</span> <span class="pre">tiles</span> <span class="pre">back</span> <span class="pre">to</span> <span class="pre">route</span> <span class="pre">-step</span> <span class="pre">5</span></code> <code class="docutils literal"><span class="pre">OK</span></code></p>
-<p>Chiudere definitivamente Demex</p>
-<p>Controllare nelle cartelle LO-TILES e TD della vostra route ci siano I fles corretti.
-Aprire la route in MSTS (si presume abbiate creato una mini activity e quindi un Path funzionante e vdere se le DM ci sono</p>
+<p>Andiamo nel menu <code class="docutils literal"><span class="pre">Distant</span> <span class="pre">Mountains</span> <span class="pre">Terrain</span></code>  e selezioniamo la voce <code class="docutils literal"><span class="pre">Copy</span> <span class="pre">DM</span> <span class="pre">tiles</span> <span class="pre">back</span> <span class="pre">to</span> <span class="pre">route</span> <span class="pre">-step</span> <span class="pre">5</span></code>.
+Al termine dell&#8217;operazione possiamo chiudere definitivamente Demex</p>
+</div>
 </div>
 
 
