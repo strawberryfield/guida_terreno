@@ -1,3 +1,7 @@
+.. raw:: latex
+
+    \newpage
+
 .. _start:
 
 ***************
@@ -70,6 +74,7 @@ Il nome della cartella della nuova linea e la scritta ``Normal Terrain`` appaion
 Cliccare con il tasto destro del mouse nella finestra dove appare la carta del mondo sulla zona dove vogliamo tracciare la nuova linea (es. Europa). 
 
 .. image:: images/rge1.jpg
+    :scale: 75 %
 
 Appare un menù dal quale selezioniamo ``Zoom Region``. Ripetiamo quest’ultimo passo per ingrandire ancora. 
 

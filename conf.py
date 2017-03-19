@@ -215,7 +215,7 @@ htmlhelp_basename = 'TerrainGuide'
 latex_elements = {
 
 'classoptions': ',openany,oneside',
-'babel': '\\usepackage[english]{babel}',
+'babel': '\\usepackage[italian]{babel}',
 
 # The paper size ('letterpaper' or 'a4paper').
 'papersize': 'a4paper',
@@ -232,7 +232,7 @@ latex_elements = {
 # Latex figure (float) alignment
 #'figure_align': 'htbp',
 
-'fncychap': '\\usepackage[Sonny]{fncychap}',
+'fncychap': '\\usepackage[Bjornstrup]{fncychap}',
 
 }
 
@@ -241,8 +241,10 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
   (master_doc, 'terrain_guide.tex', 'Guida alla creazione del terreno per MSTS/OR',
-   'Roberto Ceccarelli', 'howto'),
+   'Roberto Ceccarelli', 'manual'),
 ]
+
+#latex_toplevel_sectioning = 'chapter'
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
