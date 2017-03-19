@@ -13,10 +13,12 @@ La fonte principale è senza dubbio il sito della NASA da dove si possono prelev
 L'indirizzo da visitare è: http://dds.cr.usgs.gov/srtm/version2_1/SRTM3/
 
 .. image:: images/srtm_index.jpg
+    :scale: 75%
 
 La navigazione non è delle più agevoli: i dati sono raggruppati per continenti e all'interno delle varie cartelle ci sono un gran numero di file il cui nome ci indica a quale area si riferiscono.
 
 .. image:: images/srtm_europe.jpg
+    :scale: 75%
 
 Nello stesso sito ci sono anche dei dati più dettagliati con una risoluzione di 1 secondo d'arco (circa 30m), ma solo per il territorio degli USA.
 
