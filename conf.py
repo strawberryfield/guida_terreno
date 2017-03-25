@@ -223,10 +223,18 @@ latex_elements = {
 # The font size ('10pt', '11pt' or '12pt').
 #'pointsize': '10pt',
 
+
 # Additional stuff for the LaTeX preamble.
 'preamble': r'''
-        \usepackage[default]{lato}
-    \usepackage{inconsolata}
+\usepackage[default]{lato}
+\usepackage{inconsolata}
+\usepackage{xmpincl}
+\includexmp{license}
+\hypersetup{pdftex,
+		pdfauthor={Roberto Ceccarelli - The Strawberry Field},
+		pdftitle={Guida alla creazione del terreno per MSTS e OR},
+		pdfsubject={Guida alla creazione di una nuova route, alla modellazione del terreno comprese le distant mountains e la generazione dei marker},
+		pdfkeywords={Train Simulator, OpenRails, terreno, distant mountains, marker}}
 ''',
 
 # Latex figure (float) alignment
@@ -235,6 +243,9 @@ latex_elements = {
 'fncychap': '\\usepackage[Bjornstrup]{fncychap}',
 
 }
+
+# include file for license
+latex_additional_files = ['license.xmp']
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
