@@ -24,4 +24,13 @@ Bibliografia
 
  - `Discussione su TrainSimHobby relativa al programma di cui sopra <http://www.trainsimhobby.net/forum/viewtopic.php?f=27&t=7228>`_ 
 
+ - `Creare placemark in Google Earth <http://earth.google.com/support/bin/static.py?page=guide.cs&guide=22364&topic=22367&answer=148142>`_
+
+ - `Creare percorsi in Google Earth <http://earth.google.com/support/bin/answer.py?hl=it&answer=148072>`_
+
+ - `Tutorial sull'uso dei file .kml <https://developers.google.com/kml/documentation/kml_tut>`_
+ 
+ - `Programma di conversione da kml a mkr <http://www.trainsimhobby.net/infusions/pro_download_panel/download.php?did=1267>`_ 
+ 
+ - `Discussione su TrainSimHobby relativa a marker e path <http://www.trainsimhobby.net/forum/viewtopic.php?f=27&t=9501>`_
 

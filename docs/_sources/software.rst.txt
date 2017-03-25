@@ -43,7 +43,9 @@ Fortunatamente qualcuno ha realizzato una distribuzione particolare senza instal
 che permette di avere Demex anche sulle macchine a 64bit ormai sempre più diffuse.
 
 Lo trovate a `questo link su Elvas Tower <http://www.elvastower.com/forums/index.php?/files/file/2286-adding-demex-to-a-windows-64-bit-operating-system/>`_ 
-(per poter procedere al download è necessario registrarsi)
+(per poter procedere al download è necessario registrarsi) oppure su
+`UkTrainSim <http://www.uktrainsim.com/filelib-info.php?form_fileid=32983>`_
+(anche qui è necessario registrarsi)
 
 Generazione dei marker
 ======================
