@@ -1,0 +1,291 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>6. Creare i marker &mdash; draft</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="draft" href="index.html"/>
+        <link rel="next" title="7. Dove prelevare le DEM" href="dm_download.html"/>
+        <link rel="prev" title="5. Completare le montagne distanti" href="dm2.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> MSTS/OR Terrain Guide
+          
+
+          
+            
+            <img src="_static/logo.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Sommario</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="software.html">1. Software necessario</a></li>
+<li class="toctree-l1"><a class="reference internal" href="main.html">2. Creare la route</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dem.html">3. Modellare il terreno</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dm.html">4. Modellare le montagne distanti</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dm2.html">5. Completare le montagne distanti</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">6. Creare i marker</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#creare-i-placemark">6.1. Creare i placemark</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#definire-un-path">6.1.1. Definire un path</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#salvare-i-dati">6.1.2. Salvare i dati</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#creare-il-file-mkr">6.2. Creare il file .mkr</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="dm_download.html">7. Dove prelevare le DEM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="biblio.html">8. Bibliografia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledgements.html">9. Ringraziamenti</a></li>
+<li class="toctree-l1"><a class="reference internal" href="download.html">10. Download sorgenti e binari</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legal.html">11. Note legali</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">MSTS/OR Terrain Guide</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>6. Creare i marker</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/marker.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="creare-i-marker">
+<span id="marker"></span><h1>6. Creare i marker<a class="headerlink" href="#creare-i-marker" title="Permalink to this headline">¶</a></h1>
+<p>Per poter avere dei riferimenti durante la costruzione della route è oppurtuno creare un elenco di punti
+di riferimento (detti marker) che realizzeremo con l&#8217;ausilio di Google Earth e di un programma di conversione.</p>
+<div class="section" id="creare-i-placemark">
+<span id="placemark"></span><h2>6.1. Creare i placemark<a class="headerlink" href="#creare-i-placemark" title="Permalink to this headline">¶</a></h2>
+<p>Aprimo Google Earth e per prima cosa creiamo una cartella in cui memorizzare tutti i placemark (e i path) che vogliamo racchiudere in un unico file.</p>
+<a class="reference internal image-reference" href="_images/gearth1.jpg"><img alt="_images/gearth1.jpg" src="_images/gearth1.jpg" style="width: 572.25px; height: 450.0px;" /></a>
+<p>Per fare questo posizioniamoci nel box “Luoghi” e clicchiamo con il tasto destro del mouse sulla prima voce dell&#8217;albero (dovrebbe essere “Luoghi personali”).
+Selezioniamo “Aggiungi” e quindi “Cartella”; ci apparirà un box nel quale definire il nome della cartella, tutto il resto possiamo ignorarlo.
+Selezioniamo la cartella appena creata e poi selezioniamo dalla toolbar il punteruolo giallo.</p>
+<a class="reference internal image-reference" href="_images/gearth2.jpg"><img alt="_images/gearth2.jpg" src="_images/gearth2.jpg" style="width: 222.0px; height: 286.5px;" /></a>
+<p>Ci apparirà il box riportato sopra dove potremo nominare il nostro placemark.
+Lasciando aperto questo box spostiamo il puntatore giallo circondato da un quadrato nel punto desiderato, quindi diamo “Ok” nel box.</p>
+<a class="reference internal image-reference" href="_images/gearth3.jpg"><img alt="_images/gearth3.jpg" src="_images/gearth3.jpg" style="width: 422.5px; height: 328.0px;" /></a>
+<p>Il placemark apparirà all&#8217;interno della cartella.</p>
+<div class="section" id="definire-un-path">
+<span id="path"></span><h3>6.1.1. Definire un path<a class="headerlink" href="#definire-un-path" title="Permalink to this headline">¶</a></h3>
+<p>La creazione di un path non differisce molto dalla creazione dei singoli placemark
+(in effetti vengono salvati come un placemark con coordinate multiple).
+Può essere molto comodo per seguire tracciato ferroviari, strade, fiumi...</p>
+<p>Lo strumento da utilizzare è quello indicato nella figura sotto.</p>
+<img alt="_images/gearth6.jpg" src="_images/gearth6.jpg" />
+<p>Del tutto simile a quello già visto il box delle proprietà</p>
+<a class="reference internal image-reference" href="_images/gearth7.jpg"><img alt="_images/gearth7.jpg" src="_images/gearth7.jpg" style="width: 267.0px; height: 139.2px;" /></a>
+<p>Attenzione: la finestra delle proprietà deve restare aperta durante tutta l&#8217;operazione di individuazione dei punti del percorso.</p>
+</div>
+<div class="section" id="salvare-i-dati">
+<span id="savekml"></span><h3>6.1.2. Salvare i dati<a class="headerlink" href="#salvare-i-dati" title="Permalink to this headline">¶</a></h3>
+<p>Posizionati tutti i placemark e creati i path possiamo procedere al salvataggio.</p>
+<p>Clicchiamo con il tasto desto del mouse sulla cartella che vogliamo salvare e scegliamo “Salva luogo con nome”</p>
+<a class="reference internal image-reference" href="_images/gearth4.jpg"><img alt="_images/gearth4.jpg" src="_images/gearth4.jpg" style="width: 631.5px; height: 482.25px;" /></a>
+<p>Apparirà la consueta form di windows in cui specificare il nome e la posizione con cui salvare.
+Fate attenzione al tipo di file: verrà proposto .kmz,
+ma per le operazioni successive noi avremo bisogno del .kml che andrà scelto nel campo in basso come si vede nella figura sotto.</p>
+<a class="reference internal image-reference" href="_images/gearth5.jpg"><img alt="_images/gearth5.jpg" src="_images/gearth5.jpg" style="width: 281.5px; height: 206.0px;" /></a>
+</div>
+</div>
+<div class="section" id="creare-il-file-mkr">
+<span id="convertkml"></span><h2>6.2. Creare il file .mkr<a class="headerlink" href="#creare-il-file-mkr" title="Permalink to this headline">¶</a></h2>
+<p>Se vogliamo visualizzare i marker nell&#8217;editor di route di Microsoft Train Simulator dobbiamo convertire
+il file <code class="docutils literal"><span class="pre">.kml</span></code> in <code class="docutils literal"><span class="pre">.mkr</span></code>, operazione che effettueremmo con il programma <code class="docutils literal"><span class="pre">kml2mkr</span></code></p>
+<a class="reference internal image-reference" href="_images/kml2mkr.jpg"><img alt="_images/kml2mkr.jpg" src="_images/kml2mkr.jpg" style="width: 525.0px; height: 300.0px;" /></a>
+<p>L&#8217;applicazione grafica viene lanciata facendo doppio click sul file <code class="docutils literal"><span class="pre">kml2mkr.hta</span></code>
+che mostra la finestra riportata sopra; di seguito il significato dei vari parametri.</p>
+<blockquote>
+<div><ul>
+<li><p class="first"><strong>File .kml</strong> (obbligatorio): il nome del file da convertire (può essere selezionato con il pulsante <code class="docutils literal"><span class="pre">Sfoglia</span></code>)</p>
+</li>
+<li><p class="first"><strong>Filtro</strong>: il nome del path da convertire oppure <code class="docutils literal"><span class="pre">_ALL</span></code> (converte tutti i punti),
+<code class="docutils literal"><span class="pre">_SPARSE</span></code> (solo i punti che non sono path), <code class="docutils literal"><span class="pre">_PATH</span></code> (solo i path) ;
+può essere selezionato con il bottone <code class="docutils literal"><span class="pre">SET</span></code> che mostra questa finestra
+dove possiamo cliccare sulla riga desiderata (si chiude da sola)</p>
+<img alt="_images/kml2mkrf.jpg" src="_images/kml2mkrf.jpg" />
+</li>
+<li><p class="first"><strong>File output</strong> (obbligatorio): il nome del file che conterrà il risultato dell&#8217;elaborazione</p>
+</li>
+</ul>
+</div></blockquote>
+<p>Se abbiamo selezionato un path verranno creati tanti marker numerati per ogni singolo punto
+che avremo scelto durante la sua definizione.</p>
+<p>Premendo il tasto <code class="docutils literal"><span class="pre">Convert</span></code> si avvia l&#8217;elaborazione al termine della quale potremo copiare
+il file nella cartella principale della route; il file si deve obbligatoriamente
+chiamare come la route ed avere estensione <code class="docutils literal"><span class="pre">.mkr</span></code></p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="dm_download.html" class="btn btn-neutral float-right" title="7. Dove prelevare le DEM" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="dm2.html" class="btn btn-neutral" title="5. Completare le montagne distanti" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017 Roberto Ceccarelli - The Strawberry Field.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.9 draft',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

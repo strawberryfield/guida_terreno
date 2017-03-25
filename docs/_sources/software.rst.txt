@@ -4,11 +4,14 @@
 Software necessario
 *******************
 
+Creazione del terreno
+=====================
+
 Per creare le route ed il terreno con le modalità descritte in questa guida è necessario 
 dotarsi di due programmi:
 
 Microsoft Train Simulator
-=========================
+-------------------------
 
 Questo programma è molto vecchio, risale al 2001, e con un po' di fortuna si può ancora trovare in qualche negozio:
 qualche anno fa ne ho acquistato una copia al Game Stop al prezzo (praticamente simbolico) di 98 centesimi. 
@@ -21,7 +24,7 @@ Leggendo varie guide in rete viene elencata una lunga serie di altre patch neces
 più recenti, ma al nostro scopo basta quella patch.
 
 Demex
-=====
+-----
 
 `Il programma può essere scaricato da questo link <http://www.digital-rails.com/files/demex_setup151.exe>`_ 
 in versione dimostrativa e può essere registrato sul sito di `Digital Rails <https://digital-rails.com/dr_tools.html>`_
@@ -41,3 +44,24 @@ che permette di avere Demex anche sulle macchine a 64bit ormai sempre più diffu
 
 Lo trovate a `questo link su Elvas Tower <http://www.elvastower.com/forums/index.php?/files/file/2286-adding-demex-to-a-windows-64-bit-operating-system/>`_ 
 (per poter procedere al download è necessario registrarsi)
+
+Generazione dei marker
+======================
+
+Per generare i marker abbiamo bisogno di altri due programmi, entrambi gratuiti:
+
+Google Earth
+------------
+
+Questo programma, sviluppato da Google, permette di esplorare l'enorme massa di dati e immagini geografiche
+messe a disposizione dal noto motore di ricerca.
+
+Può essere liberamente scaricato `collegandosi a questo link <https://www.google.it/earth/download/ge/agree.html>`_
+
+kml2mkr
+-------
+
+Questo mio programma permette la conversione dei dati scaricati da Google Earth nei file .mkr utilizzati dall'editor
+di Train Simulator.
+
+Può essere `scaricato da TrainSimHobby <http://www.trainsimhobby.net/infusions/pro_download_panel/download.php?did=1267>`_

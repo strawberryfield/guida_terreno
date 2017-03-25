@@ -93,11 +93,12 @@
 <li class="toctree-l1"><a class="reference internal" href="dem.html">3. Modellare il terreno</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dm.html">4. Modellare le montagne distanti</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dm2.html">5. Completare le montagne distanti</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dm_download.html">6. Dove prelevare le DEM</a></li>
-<li class="toctree-l1"><a class="reference internal" href="biblio.html">7. Bibliografia</a></li>
-<li class="toctree-l1"><a class="reference internal" href="acknowledgements.html">8. Ringraziamenti</a></li>
-<li class="toctree-l1"><a class="reference internal" href="download.html">9. Download sorgenti e binari</a></li>
-<li class="toctree-l1"><a class="reference internal" href="legal.html">10. Note legali</a></li>
+<li class="toctree-l1"><a class="reference internal" href="marker.html">6. Creare i marker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dm_download.html">7. Dove prelevare le DEM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="biblio.html">8. Bibliografia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledgements.html">9. Ringraziamenti</a></li>
+<li class="toctree-l1"><a class="reference internal" href="download.html">10. Download sorgenti e binari</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legal.html">11. Note legali</a></li>
 </ul>
 
             
@@ -148,9 +149,15 @@
 <p class="caption"><span class="caption-text">Sommario</span><a class="headerlink" href="#mastertoc" title="Permalink to this toctree">¶</a></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="software.html">1. Software necessario</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="software.html#microsoft-train-simulator">1.1. Microsoft Train Simulator</a></li>
-<li class="toctree-l2"><a class="reference internal" href="software.html#demex">1.2. Demex</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="software.html#demex-in-sistemi-a-64-bit">1.2.1. Demex in sistemi a 64 bit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="software.html#creazione-del-terreno">1.1. Creazione del terreno</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="software.html#microsoft-train-simulator">1.1.1. Microsoft Train Simulator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="software.html#demex">1.1.2. Demex</a></li>
+<li class="toctree-l3"><a class="reference internal" href="software.html#demex-in-sistemi-a-64-bit">1.1.3. Demex in sistemi a 64 bit</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="software.html#generazione-dei-marker">1.2. Generazione dei marker</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="software.html#google-earth">1.2.1. Google Earth</a></li>
+<li class="toctree-l3"><a class="reference internal" href="software.html#kml2mkr">1.2.2. kml2mkr</a></li>
 </ul>
 </li>
 </ul>
@@ -184,23 +191,32 @@
 <li class="toctree-l2"><a class="reference internal" href="dm2.html#trasferire-i-tiles">5.3. Trasferire i tiles</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="dm_download.html">6. Dove prelevare le DEM</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="dm_download.html#nasa">6.1. NASA</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dm_download.html#viewfinderpanoramas">6.2. viewfinderpanoramas</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dm_download.html#portale-cartografico-nazionale">6.3. Portale cartografico nazionale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="marker.html">6. Creare i marker</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="marker.html#creare-i-placemark">6.1. Creare i placemark</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="marker.html#definire-un-path">6.1.1. Definire un path</a></li>
+<li class="toctree-l3"><a class="reference internal" href="marker.html#salvare-i-dati">6.1.2. Salvare i dati</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="biblio.html">7. Bibliografia</a></li>
-<li class="toctree-l1"><a class="reference internal" href="acknowledgements.html">8. Ringraziamenti</a></li>
-<li class="toctree-l1"><a class="reference internal" href="download.html">9. Download sorgenti e binari</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="download.html#versioni-compilate">9.1. Versioni compilate</a></li>
-<li class="toctree-l2"><a class="reference internal" href="download.html#sorgenti">9.2. Sorgenti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="marker.html#creare-il-file-mkr">6.2. Creare il file .mkr</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="legal.html">10. Note legali</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="legal.html#garanzia">10.1. Garanzia</a></li>
-<li class="toctree-l2"><a class="reference internal" href="legal.html#riconoscimenti-della-proprieta">10.2. Riconoscimenti della proprietà</a></li>
-<li class="toctree-l2"><a class="reference internal" href="legal.html#accordi-di-copyright-e-licenza">10.3. Accordi di Copyright e Licenza</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dm_download.html">7. Dove prelevare le DEM</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="dm_download.html#nasa">7.1. NASA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dm_download.html#viewfinderpanoramas">7.2. viewfinderpanoramas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dm_download.html#portale-cartografico-nazionale">7.3. Portale cartografico nazionale</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="biblio.html">8. Bibliografia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledgements.html">9. Ringraziamenti</a></li>
+<li class="toctree-l1"><a class="reference internal" href="download.html">10. Download sorgenti e binari</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="download.html#versioni-compilate">10.1. Versioni compilate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="download.html#sorgenti">10.2. Sorgenti</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="legal.html">11. Note legali</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="legal.html#garanzia">11.1. Garanzia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="legal.html#riconoscimenti-della-proprieta">11.2. Riconoscimenti della proprietà</a></li>
+<li class="toctree-l2"><a class="reference internal" href="legal.html#accordi-di-copyright-e-licenza">11.3. Accordi di Copyright e Licenza</a></li>
 </ul>
 </li>
 </ul>
