@@ -153,7 +153,7 @@
 <span id="dm-download"></span><h1>7. Dove prelevare le DEM<a class="headerlink" href="#dove-prelevare-le-dem" title="Permalink to this headline">¶</a></h1>
 <p>Abbiamo il programma di conversione, ma dove possiamo trovare i dati da convertire?</p>
 <div class="section" id="nasa">
-<h2>7.1. NASA<a class="headerlink" href="#nasa" title="Permalink to this headline">¶</a></h2>
+<span id="srtm"></span><h2>7.1. NASA<a class="headerlink" href="#nasa" title="Permalink to this headline">¶</a></h2>
 <p>La fonte principale è senza dubbio il sito della NASA da dove si possono prelevare le “mattonelle” 1°x1° dei dati con risoluzione 3 secondi di arco (alle nostre latitudini circa 90 metri).
 L&#8217;indirizzo da visitare è: <a class="reference external" href="http://dds.cr.usgs.gov/srtm/version2_1/SRTM3/">http://dds.cr.usgs.gov/srtm/version2_1/SRTM3/</a></p>
 <a class="reference internal image-reference" href="_images/srtm_index.jpg"><img alt="_images/srtm_index.jpg" src="_images/srtm_index.jpg" style="width: 384.0px; height: 175.5px;" /></a>
@@ -162,12 +162,12 @@ L&#8217;indirizzo da visitare è: <a class="reference external" href="http://dds
 <p>Nello stesso sito ci sono anche dei dati più dettagliati con una risoluzione di 1 secondo d&#8217;arco (circa 30m), ma solo per il territorio degli USA.</p>
 </div>
 <div class="section" id="viewfinderpanoramas">
-<h2>7.2. viewfinderpanoramas<a class="headerlink" href="#viewfinderpanoramas" title="Permalink to this headline">¶</a></h2>
+<span id="id1"></span><h2>7.2. viewfinderpanoramas<a class="headerlink" href="#viewfinderpanoramas" title="Permalink to this headline">¶</a></h2>
 <p>Per alcune zone del globo, generalmente catene montuose, ci sono anche dei file interpolati con dati cartografici che raggiungono la stessa risoluzione di 1 secondo d&#8217;arco, si possono trovare all&#8217;indirizzo:
 <a class="reference external" href="http://www.viewfinderpanoramas.org/dem3.html">http://www.viewfinderpanoramas.org/dem3.html</a></p>
 </div>
 <div class="section" id="portale-cartografico-nazionale">
-<h2>7.3. Portale cartografico nazionale<a class="headerlink" href="#portale-cartografico-nazionale" title="Permalink to this headline">¶</a></h2>
+<span id="pcn"></span><h2>7.3. Portale cartografico nazionale<a class="headerlink" href="#portale-cartografico-nazionale" title="Permalink to this headline">¶</a></h2>
 <p>Per quanto riguarda il territorio italiano abbiamo un&#8217;altra possibilità: sono i dati che si possono prelevare dal sito del
 <a class="reference external" href="http://www.pcn.minambiente.it/viewer">Portale Cartografico Nazionale gestito dal Ministero dell&#8217;Ambiente</a>.</p>
 <img alt="_images/pcn.jpg" src="_images/pcn.jpg" />
@@ -177,10 +177,10 @@ Per chi non lo sapesse possiamo definire un “web service” come un sito web d
 ma era un procedimento piuttosto laborioso.</p>
 <p>Ho successivamente preparato una utility con la quale è sufficiente specificare le coordinate dei punti inferiore sinistro e superiore destro della mappa richiesta nelle tradizionali latitudine/longitudine o anche prelevando i punti da placemark di Google Earth.</p>
 <img alt="_images/pcnurl.jpg" src="_images/pcnurl.jpg" />
-<p><a class="reference external" href="http://www.trainsimhobby.net/infusions/pro_download_panel/download.php?did=1340">Il programma è disponibile per il download a questo indirizzo</a>.</p>
+<p id="pcnurl"><a class="reference external" href="http://www.trainsimhobby.net/infusions/pro_download_panel/download.php?did=1340">Il programma è disponibile per il download a questo indirizzo</a>.</p>
 <p>Recentemente ho scaricato altri dati dal portale e mi sono accorto che al posto del mare c&#8217;era una muraglia:</p>
 <img alt="_images/muraglia.jpg" src="_images/muraglia.jpg" />
-<p>Ho scoperto che il problema era dato da alcuni valori di altezza pari a 32000 metri che probabilmente segnano la fine dei dati
+<p id="tiffmanager">Ho scoperto che il problema era dato da alcuni valori di altezza pari a 32000 metri che probabilmente segnano la fine dei dati
 validi. Per indagare e risolvere il problema ho messo a punto un piccolo
 <a class="reference external" href="https://github.com/strawberryfield/TIFFmanager/releases">tool disponibile su GitHub</a>.</p>
 </div>

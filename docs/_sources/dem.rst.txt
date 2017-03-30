@@ -4,12 +4,12 @@
 Modellare il terreno
 ********************
 
-Con il procedimento del capitolo precedente abbiamo creato la cosidetta 
+Con il procedimento del :ref:`capitolo precedente<start>` abbiamo creato la cosidetta 
 *distesa siberiana* ovvero un terreno uniformemente piatto per tutta l'estensione
 della nostra route.
 
 In questo capitolo ci occuperemo di modellare i rilievi utilizzando 
-dati di elevazione disponibili in appositi database, le codidette DEM.
+dati di elevazione disponibili in appositi database, le codidette :ref:`DEM<dm_download>`.
 
 .. _dem_import:
 

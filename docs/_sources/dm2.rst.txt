@@ -9,6 +9,8 @@ queste sono state generate solo parzialmente. Con un trucco perfettamente legale
 spiegato da `Trensimpedia <http://www.trensim.com/trensimpedia/index.php?title=MSTS:Modelado_de_terreno_con_Demex>`_
 si possono avere delle montagne "complete".
 
+.. _dm2_quadtree:
+
 Generare il quad-tree nella route temporanea
 ============================================
 
@@ -17,6 +19,8 @@ nel menù ``File`` clicchiamo su ``New Quad Tree``
 
 Dobbiamo adesso creare un quad-tree identico a quello delle distant mountains,
 con i quadrettoni grandi.
+
+.. _dm2_quadtree_howto:
 
 Generare il quad-tree
 ---------------------
@@ -39,6 +43,8 @@ Infine, sempre cliccando con il tasto destro del mouse sui quadrettoni,
 dal menu selezioniamo ``Toggle Populated State`` per gli stessi quadrettoni
 selezionati per le distant mountains del capitolo precedente.
 
+.. _dm2_dem:
+
 Modellare il terreno con Demex
 ==============================
 
@@ -46,7 +52,7 @@ Apriamo Demex in modalità ``Unregistered``.
 
 .. image:: images/demex_unregistered.jpg
 
-Carichiamo le DEM come visto in precedenza e 
+:ref:`Carichiamo le DEM come visto in precedenza <generate_standard_terrain>` e 
 selezioniamo la route temporanea.
 
 Ora apriamo il menù ``Standard terrain`` e selezioniamo la voce ``Create Route Terrain``.

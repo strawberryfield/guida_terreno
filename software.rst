@@ -10,6 +10,8 @@ Creazione del terreno
 Per creare le route ed il terreno con le modalità descritte in questa guida è necessario 
 dotarsi di due programmi:
 
+.. _msts:
+
 Microsoft Train Simulator
 -------------------------
 
@@ -17,11 +19,15 @@ Questo programma è molto vecchio, risale al 2001, e con un po' di fortuna si pu
 qualche anno fa ne ho acquistato una copia al Game Stop al prezzo (praticamente simbolico) di 98 centesimi. 
 Mi dicono sia trovabile più facilmente su eBay.
 
+.. _msts_patch:
+
 Dopo l'installazione è necessario applicare una patch fornita dalla stessa Microsoft e 
 `scaricabile da questo link <http://msts.steam4me.net/MSTS_Updates/files/Train_Update1.exe>`_.
 
 Leggendo varie guide in rete viene elencata una lunga serie di altre patch necessarie per utilizzare gli add-on
 più recenti, ma al nostro scopo basta quella patch.
+
+.. _demex:
 
 Demex
 -----
@@ -32,6 +38,8 @@ in versione dimostrativa e può essere registrato sul sito di `Digital Rails <ht
 La versione registrata può realizzare le montagne distanti in maniera semplificata; se non si ha intenzione di utilizzare 
 la funzione delle montagne distanti o si accetta la complicazione spiegata più avanti si può
 procedere anche con la versione non registrata.
+
+.. _demex64:
 
 Demex in sistemi a 64 bit
 -------------------------
@@ -52,6 +60,8 @@ Generazione dei marker
 
 Per generare i marker abbiamo bisogno di altri due programmi, entrambi gratuiti:
 
+.. _google_earth:
+
 Google Earth
 ------------
 
@@ -59,6 +69,8 @@ Questo programma, sviluppato da Google, permette di esplorare l'enorme massa di 
 messe a disposizione dal noto motore di ricerca.
 
 Può essere liberamente scaricato `collegandosi a questo link <https://www.google.it/earth/download/ge/agree.html>`_
+
+.. _kml2mkr:
 
 kml2mkr
 -------

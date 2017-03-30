@@ -5,7 +5,8 @@ Creare i marker
 ***************
 
 Per poter avere dei riferimenti durante la costruzione della route è oppurtuno creare un elenco di punti
-di riferimento (detti marker) che realizzeremo con l'ausilio di Google Earth e di un programma di conversione.
+di riferimento (detti marker) che realizzeremo con l'ausilio di 
+:ref:`Google Earth<google_earth>` e di un :ref:`programma di conversione<kml2mkr>`.
 
 .. _placemark:
 

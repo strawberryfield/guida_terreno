@@ -6,6 +6,8 @@ Dove prelevare le DEM
 
 Abbiamo il programma di conversione, ma dove possiamo trovare i dati da convertire?
 
+.. _srtm:
+
 NASA
 ====
 
@@ -22,11 +24,15 @@ La navigazione non è delle più agevoli: i dati sono raggruppati per continenti
 
 Nello stesso sito ci sono anche dei dati più dettagliati con una risoluzione di 1 secondo d'arco (circa 30m), ma solo per il territorio degli USA.
 
+.. _viewfinderpanoramas:
+
 viewfinderpanoramas
 ===================
 
 Per alcune zone del globo, generalmente catene montuose, ci sono anche dei file interpolati con dati cartografici che raggiungono la stessa risoluzione di 1 secondo d'arco, si possono trovare all'indirizzo:
 http://www.viewfinderpanoramas.org/dem3.html
+
+.. _pcn:
 
 Portale cartografico nazionale
 ==============================
@@ -46,11 +52,15 @@ Ho successivamente preparato una utility con la quale è sufficiente specificare
 
 .. image:: images/pcnurl.jpg
 
+.. _pcnurl:
+
 `Il programma è disponibile per il download a questo indirizzo <http://www.trainsimhobby.net/infusions/pro_download_panel/download.php?did=1340>`_.
 
 Recentemente ho scaricato altri dati dal portale e mi sono accorto che al posto del mare c'era una muraglia:
 
 .. image:: images/muraglia.jpg
+
+.. _tiffmanager:
 
 Ho scoperto che il problema era dato da alcuni valori di altezza pari a 32000 metri che probabilmente segnano la fine dei dati 
 validi. Per indagare e risolvere il problema ho messo a punto un piccolo 

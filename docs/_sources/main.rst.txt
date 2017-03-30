@@ -108,7 +108,7 @@ E' possibile anche selezionare le mattonelle una per volta cliccando con il tast
 Se avete selezionato erroneamente qualche mattonella premete di nuovo ``Toggle Populated State`` su una o più mattonelle.
 
 Finita la selezione apriamo il menù ``Edit`` e selezioniamo ``Minimize Quad Tree``.
-Quando vedrete il messaggio 
+Quando vedrete il messaggio:: 
 
     This will remove empty quad tree nodes. Continue? 
 

@@ -12,6 +12,8 @@ La procedura di creazione delle montagne distanti si effettua sempre con Demex
 Accertiamoci che fra le route sia presente lo scenario di default USA2 (Marias Pass):
 durante il processo di costruzione vengono prelevati alcuni files da questa route.
 
+.. _tmproute:
+
 Creare la route temporanea
 ==========================
 
@@ -32,6 +34,8 @@ Poi dal menu ``Distant Mountains Terrain`` selezioniamo ``Prepare Route``
 .. image:: images/dm4.jpg
 
 Confermiamo con ``OK`` e minimizziamo Demex.
+
+.. _dm_quadtree:
 
 Generare il quad-tree
 =====================
@@ -64,6 +68,8 @@ Salviamo nuovamente il quad-tree (da ``File`` il solito ``Save Quad Tree``)
 
 Possiamo chiudere il ``Route Geometry Extractor`` e tutto 
 ``Train Simulator Editors & Tools`` ed ingrandire di nuovo Demex.
+
+.. _dm_dem:
 
 Applicare le DEM
 ================
