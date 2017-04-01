@@ -98,6 +98,17 @@ dal menu ``Distant Mountains Terrain`` scegliamo ``Create distant mountain Terra
 
 Al termine dell'operazione confermiamo con ``OK``.
 
+.. note::
+
+    Quanto riportato nel punto sopra è quello che risulta dalla mia esperienza e dalla 
+    `guida di Trensimpedia <http://www.trensim.com/trensimpedia/index.php?title=MSTS:Modelado_de_terreno_con_Demex>`_ 
+
+    Nella `guida di Guido Ferretti <http://www.trainsimhobby.net/forum/viewtopic.php?f=13&t=16553#p387552>`_ 
+    (che utilizza la versione registrata di Demex) si legge che si dovrebbe seguire la voce di menu 
+    ``Clone DM terrain from std. Terrain``
+
+    A me quella voce risulta disabilitata, ma mi fido degli autori la cui autorevolezza non può essere messa in discussione.
+
 Minimizziamo ancora una volta Demex ed apriamo il ``Route Editor``
 
 Selezionare la Route Temporanea creando quindi il Terrain Buffer. Così facendo si creano i Tiles nell’omonima cartella della Route temporanea
