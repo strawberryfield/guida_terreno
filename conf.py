@@ -36,7 +36,7 @@ import shlex
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.mathjax',
-#    'cloud_sptheme.ext.table_styling',
+    'sphinx.ext.githubpages',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -72,7 +72,7 @@ release = '0.9 draft'
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = None
+language = 'it'
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:
@@ -207,6 +207,9 @@ html_static_path = ['_static']
 # implements a search results scorer. If empty, the default will be used.
 #html_search_scorer = 'scorer.js'
 
+
+# -- Options for HTMLHelp output ------------------------------------------
+
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'TerrainGuide'
 
@@ -313,3 +316,25 @@ texinfo_documents = [
 
 # If true, do not generate a @detailmenu in the "Top" node's menu.
 #texinfo_no_detailmenu = False
+
+
+# -- Options for Epub output ----------------------------------------------
+
+# Bibliographic Dublin Core info.
+epub_title = project
+epub_author = author
+epub_publisher = author
+epub_copyright = copyright
+
+# The unique identifier of the text. This can be a ISBN number
+# or the project homepage.
+#
+# epub_identifier = ''
+
+# A unique identification for the text.
+#
+# epub_uid = ''
+
+# A list of files that should not be packed into the epub file.
+epub_exclude_files = ['search.html']
+
