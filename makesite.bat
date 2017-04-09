@@ -15,3 +15,7 @@ copy /Y %builddir%\latex\*.pdf %downloads%
 
 call make.bat epub
 copy /Y %builddir%\epub\*.epub %downloads%
+
+git add .
+git commit -m "Aggiornamento automatico sito"
+git push terrain_guide master

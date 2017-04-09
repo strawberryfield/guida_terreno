@@ -11,18 +11,16 @@ e nella cartella `docs\bin` le versioni in PDF ed EPUB.
 
 ## Compilazione dei sorgenti
 
-Per chi volesse compilare da se i sorgenti riporto alcune note desunte dalla guida realizzata da Peter Gulyas
-per la documentazione del progetto *OpenRails* consultabile qui: https://gist.github.com/pzgulyas/b5068c7c2cc801dc36e7
+Per chi volesse compilare da se i sorgenti riporto alcune note desunte da questa stessa guida consultabile qui: https://strawberryfield.github.io/guide_guide/index.html
 
 ### Installare *Sphinx* e *MikTex*
 
-Installare *Python* e *Sphinx*, come descritto qui: http://www.sphinx-doc.org/en/stable/install.html
+Per compilare correttamente i sorgenti è necessario disporre di **Python** (https://www.python.org/)
+e **Sphinx-Build** (http://www.sphinx-doc.org/en/stable/install.html)
 
-Installare *sphinx-autobuild*, aprire il prompt comadi e scrivere:
+Per ottenere il file PDF è necessario anche un interprete LaTeX; in Windows si può utilizzare **MikTex** (https://miktex.org/howto/install-miktex) 
 
-    pip install sphinx-autobuild
-
-Installare *MikTex* come descritto qui: http://miktex.org/howto/install-miktex
+L'installazione dell'ambiente software necessario è descritta in https://strawberryfield.github.io/guide_guide/rest.html#installare-il-software-necessario
 
 ### Compilare la guida
 
@@ -51,15 +49,11 @@ Infine il comando
 pulirà completamente la cartella `_build` 
 (utile in caso di modifiche per evitare che restino vecchi files inutili)
 
-### Aggiornare il sito web collegato
+## Licenza
 
-Il progetto github ha associato un sito web contenuto nella cartella `docs`
-che contiene la versione html di questa guida ed i download delle versioni
-PDF ed EPUB.
+copyright (c) 2017 Roberto Ceccarelli - The Strawberry Field.
 
-Per agevolare l'aggiornamento del sito si può utilizzare lo script
+Quest'opera è stata rilasciata con licenza Creative Commons Attribuzione - Non commerciale - Condividi allo stesso modo 4.0 Internazionale. 
 
-    makesite
-	
-che compila le varie versioni e copia i files nella cartella `docs`
+Per leggere una copia della licenza visita il sito web http://creativecommons.org/licenses/by-nc-sa/4.0/ o spedisci una lettera a Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
